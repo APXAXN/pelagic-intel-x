@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { ChapterWrapper } from '@/components/layout/ChapterWrapper'
 import { RevealOnScroll } from '@/components/ui/RevealOnScroll'
 import { StatCard } from '@/components/ui/StatCard'
@@ -5,6 +6,8 @@ import { DownloadPanel } from '@/components/ui/DownloadPanel'
 import { OceanDensityMap } from '@/components/map/OceanDensityMap'
 import { motion } from 'framer-motion'
 import { useInView } from '@/hooks/useInView'
+
+const PlasticDepthModel = lazy(() => import('@/components/PlasticDepthModel'))
 
 function SocialMockup({ platform, content, engagement }) {
   const { ref, isInView } = useInView({ threshold: 0.2 })
@@ -107,6 +110,11 @@ const CHAPTER3_DOWNLOADS = [
     description: 'X thread (7 posts) + LinkedIn post — launch day content sequence',
     filename: 'pelagicintelx-social-content-brief.pdf',
   },
+  {
+    title: 'Depth Model — Methodology Note',
+    description: 'Technical methodology for sub-surface volumetric plastic density modeling',
+    filename: 'pelagicintelx-depth-model-methodology.pdf',
+  },
 ]
 
 export function Chapter3() {
@@ -141,6 +149,53 @@ export function Chapter3() {
       <RevealOnScroll className="mb-16">
         <OceanDensityMap />
       </RevealOnScroll>
+
+      {/* ── Narrative bridge: surface → depth ── */}
+      <RevealOnScroll className="mb-6">
+        <div className="flex items-center gap-4 my-12">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#00D4FF]/30 to-transparent" />
+          <span className="font-mono text-[10px] tracking-[0.2em] text-[#00D4FF] uppercase whitespace-nowrap px-3 py-1 rounded-full border border-[#00D4FF]/20 bg-[#00D4FF]/5">
+            New — Depth Profile Data
+          </span>
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#00D4FF]/30 to-transparent" />
+        </div>
+      </RevealOnScroll>
+
+      <RevealOnScroll className="mb-12 max-w-3xl">
+        <h3 className="font-display text-2xl md:text-3xl text-text-primary mb-4 leading-snug">
+          Every map before this one was looking at the surface.
+        </h3>
+        <p className="text-text-secondary leading-relaxed">
+          Pelagic IntelX's satellite-AI pipeline doesn't stop at the waterline.
+          By fusing multispectral imagery with sub-surface acoustic sensor data,
+          we've modeled microplastic concentration through the full water column
+          — for the first time at Pacific scale.
+        </p>
+      </RevealOnScroll>
+
+      {/* 3D Depth Model */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.15 }}
+        className="mb-16"
+      >
+        <Suspense
+          fallback={
+            <div
+              className="w-full rounded-xl flex items-center justify-center"
+              style={{ background: '#0a0e1a', aspectRatio: '16/9' }}
+            >
+              <span className="font-mono text-sm text-[#8899AA] animate-pulse">
+                Loading 3D depth model…
+              </span>
+            </div>
+          }
+        >
+          <PlasticDepthModel />
+        </Suspense>
+      </motion.div>
 
       {/* Campaign strategy */}
       <CampaignStrategy />
