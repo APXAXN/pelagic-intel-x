@@ -170,7 +170,7 @@ function MessageArchitecture() {
               {aud.id === 'journalists' &&
                 'The map gives reporters a visual story — not just statistics. Embeddable, shareable, updated in near-real-time.'}
               {aud.id === 'researchers' &&
-                'The underlying dataset is open-access. Methodology is published. The satellite + CV pipeline is reproducible.'}
+                'The underlying dataset is open-access. Methodology is published. The satellite-AI pipeline is reproducible.'}
               {aud.id === 'policymakers' &&
                 'This map makes the invisible visible. It gives regulators the evidence base to move from negotiation to enforcement.'}
             </p>

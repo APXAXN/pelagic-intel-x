@@ -219,7 +219,7 @@ export function Chapter5() {
             "The ocean has been waiting for this map. Now we build on it."
           </p>
           <a
-            href="https://github.com"
+            href="https://github.com/APXAXN/pelagic-intel-x"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 font-mono text-sm text-cyan hover:text-text-primary transition-colors"

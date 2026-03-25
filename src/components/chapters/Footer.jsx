@@ -49,7 +49,7 @@ export function Footer() {
             LinkedIn
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/APXAXN/pelagic-intel-x"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-xs text-text-dim hover:text-cyan transition-colors"
