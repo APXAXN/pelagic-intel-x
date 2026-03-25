@@ -29,7 +29,8 @@ export function ChapterWrapper({ id, label, title, subtitle, children, className
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary mb-4 leading-tight"
+            className="font-display text-4xl md:text-5xl lg:text-6xl text-text-primary mb-4"
+            style={{ fontWeight: 300, fontStyle: 'italic', letterSpacing: '-0.02em', lineHeight: 1.06 }}
           >
             {title}
           </motion.h2>

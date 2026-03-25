@@ -153,11 +153,11 @@ export function Chapter3() {
       {/* ── Narrative bridge: surface → depth ── */}
       <RevealOnScroll className="mb-6">
         <div className="flex items-center gap-4 my-12">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#00D4FF]/30 to-transparent" />
-          <span className="font-mono text-[10px] tracking-[0.2em] text-[#00D4FF] uppercase whitespace-nowrap px-3 py-1 rounded-full border border-[#00D4FF]/20 bg-[#00D4FF]/5">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#E85B8A]/30 to-transparent" />
+          <span className="font-mono text-[10px] tracking-[0.2em] text-[#E85B8A] uppercase whitespace-nowrap px-3 py-1 rounded-full border border-[#E85B8A]/20 bg-[#E85B8A]/5">
             New — Depth Profile Data
           </span>
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#00D4FF]/30 to-transparent" />
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#E85B8A]/30 to-transparent" />
         </div>
       </RevealOnScroll>
 
@@ -185,9 +185,9 @@ export function Chapter3() {
           fallback={
             <div
               className="w-full rounded-xl flex items-center justify-center"
-              style={{ background: '#0a0e1a', aspectRatio: '16/9' }}
+              style={{ background: '#0D2B35', aspectRatio: '16/9' }}
             >
-              <span className="font-mono text-sm text-[#8899AA] animate-pulse">
+              <span className="font-mono text-sm text-[#7AA8B8] animate-pulse">
                 Loading 3D depth model…
               </span>
             </div>

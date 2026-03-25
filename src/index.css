@@ -1,31 +1,24 @@
 @import "tailwindcss";
-@import "@fontsource/playfair-display/400.css";
-@import "@fontsource/playfair-display/700.css";
-@import "@fontsource/playfair-display/400-italic.css";
 @import "@fontsource/ibm-plex-mono/400.css";
 @import "@fontsource/ibm-plex-mono/500.css";
 @import "@fontsource/ibm-plex-mono/700.css";
-@import "@fontsource/inter/400.css";
-@import "@fontsource/inter/500.css";
-@import "@fontsource/inter/600.css";
-@import "@fontsource/inter/700.css";
 
-/* Pelagic IntelX Design Tokens */
+/* Pelagic IntelX Design Tokens — Ai2 Dark + Fraunces/Epilogue */
 @theme {
-  --color-ocean-bg: #0a0e1a;
-  --color-ocean-surface: #0f1520;
-  --color-ocean-border: #1a2535;
-  --color-cyan: #00D4FF;
-  --color-cyan-dim: #00A3CC;
-  --color-gold: #E8C547;
-  --color-gold-dim: #B8962F;
-  --color-text-primary: #F0F4F8;
-  --color-text-secondary: #8899AA;
-  --color-text-dim: #5A6A7A;
+  --color-ocean-bg: #0D2B35;
+  --color-ocean-surface: #143545;
+  --color-ocean-border: #1a4050;
+  --color-cyan: #E85B8A;
+  --color-cyan-dim: #c4326a;
+  --color-gold: #2A6070;
+  --color-gold-dim: #1a4050;
+  --color-text-primary: #F5F0E8;
+  --color-text-secondary: #7AA8B8;
+  --color-text-dim: #4A7080;
 
-  --font-display: "Playfair Display", Georgia, serif;
+  --font-display: "Fraunces", Georgia, serif;
   --font-mono: "IBM Plex Mono", "Fira Code", monospace;
-  --font-body: "Inter", system-ui, sans-serif;
+  --font-body: "Epilogue", system-ui, sans-serif;
 }
 
 /* Base styles */
@@ -39,7 +32,7 @@ body {
   background-color: var(--color-ocean-bg);
   color: var(--color-text-primary);
   font-family: var(--font-body);
-  line-height: 1.6;
+  line-height: 1.65;
   margin: 0;
   overflow-x: hidden;
 }

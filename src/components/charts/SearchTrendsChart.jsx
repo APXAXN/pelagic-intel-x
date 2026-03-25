@@ -2,11 +2,11 @@ import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianG
 import searchTrends from '@/data/search_trends.json'
 
 const COLORS = {
-  'ocean plastic': '#00D4FF',
-  'microplastics': '#E8C547',
-  'plastic pollution': '#8899AA',
-  'ocean cleanup': '#4ECDC4',
-  'marine debris': '#6B7280',
+  'ocean plastic': '#E85B8A',
+  'microplastics': '#F5F0E8',
+  'plastic pollution': '#7AA8B8',
+  'ocean cleanup': '#7AA8B8',
+  'marine debris': '#4A7080',
 }
 
 function CustomTooltip({ active, payload, label }) {
@@ -46,16 +46,16 @@ export function SearchTrendsChart() {
       </h4>
       <ResponsiveContainer width="100%" height={320}>
         <LineChart data={sampled} margin={{ top: 5, right: 10, left: -10, bottom: 5 }}>
-          <CartesianGrid stroke="#1a2535" strokeDasharray="3 3" />
+          <CartesianGrid stroke="#1a4050" strokeDasharray="3 3" />
           <XAxis
             dataKey="date"
-            tick={{ fill: '#5A6A7A', fontSize: 11, fontFamily: 'IBM Plex Mono' }}
+            tick={{ fill: '#4A7080', fontSize: 11, fontFamily: 'IBM Plex Mono' }}
             tickLine={false}
-            axisLine={{ stroke: '#1a2535' }}
+            axisLine={{ stroke: '#1a4050' }}
             interval="preserveStartEnd"
           />
           <YAxis
-            tick={{ fill: '#5A6A7A', fontSize: 11, fontFamily: 'IBM Plex Mono' }}
+            tick={{ fill: '#4A7080', fontSize: 11, fontFamily: 'IBM Plex Mono' }}
             tickLine={false}
             axisLine={false}
             domain={[0, 100]}

@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 import { useInView } from '@/hooks/useInView'
 
+// TODO: PDF collateral — recolor to Ai2 Dark palette
+
 function DownloadCard({ title, description, filename, delay = 0 }) {
   const href = `/downloads/${filename}`
 

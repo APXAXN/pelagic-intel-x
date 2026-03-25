@@ -16,7 +16,7 @@ const AUDIENCES = [
       '"Publicly available"',
       '"The map speaks for itself"',
     ],
-    color: '#00D4FF',
+    color: '#E85B8A',
   },
   {
     id: 'researchers',
@@ -30,7 +30,7 @@ const AUDIENCES = [
       '"Peer-reviewed pipeline"',
       '"Density model"',
     ],
-    color: '#E8C547',
+    color: '#2A6070',
   },
   {
     id: 'policymakers',
@@ -44,7 +44,7 @@ const AUDIENCES = [
       '"Evidence base for enforcement"',
       '"Jurisdiction-level data"',
     ],
-    color: '#4ECDC4',
+    color: '#7AA8B8',
   },
 ]
 
@@ -185,14 +185,14 @@ function StakeholderMap() {
   const { ref, isInView } = useInView({ threshold: 0.2 })
 
   const nodes = [
-    { label: 'Pelagic IntelX', x: 50, y: 50, size: 'lg', color: '#00D4FF' },
-    { label: 'Journalists', x: 20, y: 20, size: 'md', color: '#00D4FF' },
-    { label: 'Researchers', x: 80, y: 20, size: 'md', color: '#E8C547' },
-    { label: 'Policymakers', x: 50, y: 85, size: 'md', color: '#4ECDC4' },
-    { label: 'UNEP', x: 25, y: 75, size: 'sm', color: '#4ECDC4' },
-    { label: 'NGOs', x: 75, y: 75, size: 'sm', color: '#4ECDC4' },
-    { label: 'Science Media', x: 10, y: 45, size: 'sm', color: '#00D4FF' },
-    { label: 'University Labs', x: 90, y: 45, size: 'sm', color: '#E8C547' },
+    { label: 'Pelagic IntelX', x: 50, y: 50, size: 'lg', color: '#E85B8A' },
+    { label: 'Journalists', x: 20, y: 20, size: 'md', color: '#E85B8A' },
+    { label: 'Researchers', x: 80, y: 20, size: 'md', color: '#2A6070' },
+    { label: 'Policymakers', x: 50, y: 85, size: 'md', color: '#7AA8B8' },
+    { label: 'UNEP', x: 25, y: 75, size: 'sm', color: '#7AA8B8' },
+    { label: 'NGOs', x: 75, y: 75, size: 'sm', color: '#7AA8B8' },
+    { label: 'Science Media', x: 10, y: 45, size: 'sm', color: '#E85B8A' },
+    { label: 'University Labs', x: 90, y: 45, size: 'sm', color: '#2A6070' },
   ]
 
   const connections = [
@@ -221,7 +221,7 @@ function StakeholderMap() {
               y1={nodes[from].y}
               x2={nodes[to].x}
               y2={nodes[to].y}
-              stroke="#1a2535"
+              stroke="#1a4050"
               strokeWidth={0.3}
               initial={{ pathLength: 0, opacity: 0 }}
               animate={isInView ? { pathLength: 1, opacity: 1 } : {}}
@@ -257,7 +257,7 @@ function StakeholderMap() {
                   x={node.x}
                   y={node.y + r + 3}
                   textAnchor="middle"
-                  fill="#8899AA"
+                  fill="#7AA8B8"
                   fontSize={2.5}
                   fontFamily="IBM Plex Mono"
                 >

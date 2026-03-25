@@ -26,21 +26,21 @@ function OceanScanAnimation() {
       time += 0.008
 
       // Clear
-      ctx.fillStyle = '#0a0e1a'
+      ctx.fillStyle = '#0D2B35'
       ctx.fillRect(0, 0, w, h)
 
       // Ocean depth gradient
       const gradient = ctx.createLinearGradient(0, 0, 0, h)
-      gradient.addColorStop(0, 'rgba(0, 20, 40, 0.3)')
-      gradient.addColorStop(0.5, 'rgba(0, 40, 60, 0.15)')
-      gradient.addColorStop(1, 'rgba(0, 10, 25, 0.4)')
+      gradient.addColorStop(0, 'rgba(13, 43, 53, 0.3)')
+      gradient.addColorStop(0.5, 'rgba(20, 53, 69, 0.15)')
+      gradient.addColorStop(1, 'rgba(10, 32, 48, 0.4)')
       ctx.fillStyle = gradient
       ctx.fillRect(0, 0, w, h)
 
       // Subtle wave lines
       for (let i = 0; i < 8; i++) {
         ctx.beginPath()
-        ctx.strokeStyle = `rgba(0, 212, 255, ${0.03 + i * 0.008})`
+        ctx.strokeStyle = `rgba(232, 91, 138, ${0.03 + i * 0.008})`
         ctx.lineWidth = 0.5
         const yBase = h * 0.2 + i * (h * 0.08)
         for (let x = 0; x < w; x += 2) {
@@ -55,15 +55,15 @@ function OceanScanAnimation() {
       // Scan line sweep
       const scanX = ((Math.sin(time * 0.4) + 1) / 2) * w
       const scanGradient = ctx.createLinearGradient(scanX - 100, 0, scanX + 100, 0)
-      scanGradient.addColorStop(0, 'rgba(0, 212, 255, 0)')
-      scanGradient.addColorStop(0.5, 'rgba(0, 212, 255, 0.08)')
-      scanGradient.addColorStop(1, 'rgba(0, 212, 255, 0)')
+      scanGradient.addColorStop(0, 'rgba(232, 91, 138, 0)')
+      scanGradient.addColorStop(0.5, 'rgba(232, 91, 138, 0.08)')
+      scanGradient.addColorStop(1, 'rgba(232, 91, 138, 0)')
       ctx.fillStyle = scanGradient
       ctx.fillRect(scanX - 100, 0, 200, h)
 
       // Scan line
       ctx.beginPath()
-      ctx.strokeStyle = 'rgba(0, 212, 255, 0.25)'
+      ctx.strokeStyle = 'rgba(232, 91, 138, 0.25)'
       ctx.lineWidth = 1
       ctx.moveTo(scanX, 0)
       ctx.lineTo(scanX, h)
@@ -78,21 +78,21 @@ function OceanScanAnimation() {
 
         ctx.beginPath()
         ctx.arc(px, py, 1.5 + Math.sin(i + time) * 0.5, 0, Math.PI * 2)
-        ctx.fillStyle = `rgba(0, 212, 255, ${alpha})`
+        ctx.fillStyle = `rgba(232, 91, 138, ${alpha})`
         ctx.fill()
 
         // Detection ring near scan line
         if (distFromScan < 80) {
           ctx.beginPath()
           ctx.arc(px, py, 6 + Math.sin(time * 2 + i) * 2, 0, Math.PI * 2)
-          ctx.strokeStyle = `rgba(0, 212, 255, ${alpha * 0.3})`
+          ctx.strokeStyle = `rgba(232, 91, 138, ${alpha * 0.3})`
           ctx.lineWidth = 0.5
           ctx.stroke()
         }
       }
 
       // Grid overlay
-      ctx.strokeStyle = 'rgba(0, 212, 255, 0.03)'
+      ctx.strokeStyle = 'rgba(232, 91, 138, 0.03)'
       ctx.lineWidth = 0.5
       for (let x = 0; x < w; x += 60) {
         ctx.beginPath()
@@ -130,6 +130,11 @@ function OceanScanAnimation() {
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Subtle depth gradient — shallow surface → deep */}
+      <div
+        className="absolute inset-0 z-[1] pointer-events-none"
+        style={{ background: 'linear-gradient(to bottom, rgba(42,96,112,0.3) 0%, transparent 50%)' }}
+      />
       <OceanScanAnimation />
 
       {/* Content */}
@@ -151,11 +156,12 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-text-primary mb-6 leading-[1.1]"
+          className="font-display text-5xl md:text-7xl lg:text-8xl text-text-primary mb-6"
+          style={{ fontWeight: 300, fontStyle: 'italic', letterSpacing: '-0.02em', lineHeight: 1.06 }}
         >
           Mapping the
           <br />
-          <span className="text-cyan">Invisible</span>
+          <span className="text-cyan" style={{ fontWeight: 700, fontStyle: 'normal' }}>Invisible</span>
         </motion.h1>
 
         {/* Subtitle */}

@@ -60,12 +60,12 @@ export function OceanDensityMap() {
               ['linear'],
               ['heatmap-density'],
               0, 'rgba(0,0,0,0)',
-              0.1, 'rgba(0,40,80,0.3)',
-              0.3, 'rgba(0,100,160,0.5)',
-              0.5, 'rgba(0,212,255,0.6)',
-              0.7, 'rgba(0,212,255,0.8)',
-              0.9, 'rgba(232,197,71,0.85)',
-              1, 'rgba(232,197,71,1)',
+              0.1, 'rgba(13,43,53,0.3)',
+              0.3, 'rgba(42,96,112,0.5)',
+              0.5, 'rgba(232,91,138,0.6)',
+              0.7, 'rgba(232,91,138,0.8)',
+              0.9, 'rgba(42,96,112,0.85)',
+              1, 'rgba(42,96,112,1)',
             ],
             'heatmap-radius': ['interpolate', ['linear'], ['zoom'], 1, 15, 5, 30, 8, 50],
             'heatmap-opacity': 0,
@@ -118,8 +118,8 @@ export function OceanDensityMap() {
             popup
               .setLngLat(e.features[0].geometry.coordinates)
               .setHTML(
-                `<div style="font-family: IBM Plex Mono; font-size: 11px; color: #F0F4F8; background: #0f1520; border: 1px solid #1a2535; padding: 8px 12px; border-radius: 6px;">
-                  <div style="color: #00D4FF; margin-bottom: 4px;">${props.category.toUpperCase()}</div>
+                `<div style="font-family: IBM Plex Mono; font-size: 11px; color: #F5F0E8; background: #143545; border: 1px solid #1a4050; padding: 8px 12px; border-radius: 6px;">
+                  <div style="color: #E85B8A; margin-bottom: 4px;">${props.category.toUpperCase()}</div>
                   <div>${props.particles_per_km2?.toLocaleString()} particles/km²</div>
                 </div>`
               )
@@ -167,7 +167,7 @@ export function OceanDensityMap() {
       {phase === 2 && (
         <motion.div
           className="absolute top-0 bottom-0 w-px bg-cyan pointer-events-none"
-          style={{ boxShadow: '0 0 30px 10px rgba(0,212,255,0.15)' }}
+          style={{ boxShadow: '0 0 30px 10px rgba(232,91,138,0.15)' }}
           initial={{ left: '0%' }}
           animate={{ left: '100%' }}
           transition={{ duration: 1.5, ease: 'linear' }}
@@ -195,7 +195,10 @@ export function OceanDensityMap() {
       )}
 
       {/* Simulated data badge */}
-      <div className="absolute bottom-4 left-4 font-mono text-xs text-text-dim/50 bg-ocean-bg/80 px-2 py-1 rounded">
+      <div
+        className="absolute bottom-4 left-4 font-mono text-xs px-2 py-1 rounded"
+        style={{ background: 'rgba(13,43,53,0.85)', color: '#7AA8B8', border: '0.5px solid #1a4050' }}
+      >
         Simulated data for portfolio purposes
       </div>
     </div>

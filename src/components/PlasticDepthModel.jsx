@@ -23,10 +23,10 @@ function generateParticles(count = 4200) {
     return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v)
   }
 
-  // Colors
-  const cyan = [0, 212 / 255, 255 / 255]
-  const deep = [10 / 255, 30 / 255, 80 / 255]
-  const gold = [232 / 255, 197 / 255, 71 / 255]
+  // Colors — Ai2 Dark palette
+  const pink = [232 / 255, 91 / 255, 138 / 255]   // #E85B8A surface
+  const deep = [20 / 255, 53 / 255, 69 / 255]      // #143545 depth
+  const teal = [42 / 255, 96 / 255, 112 / 255]      // #2A6070 peak density core
 
   for (let i = 0; i < count; i++) {
     const ci = i % clusters.length
@@ -54,19 +54,19 @@ function generateParticles(count = 4200) {
     // Color by depth
     const t = Math.min(depth / 200, 1)
 
-    // Gold tint for core cluster 0, surface
+    // Teal tint for core cluster 0, surface
     const distToC0 = Math.sqrt((x - clusters[0].cx) ** 2 + (z - clusters[0].cz) ** 2)
     const isCore = ci === 0 && distToC0 < 25 && depth < 60
 
     if (isCore) {
       const gt = 0.5 + t * 0.5
-      colors[i * 3]     = gold[0] * (1 - gt) + deep[0] * gt
-      colors[i * 3 + 1] = gold[1] * (1 - gt) + deep[1] * gt
-      colors[i * 3 + 2] = gold[2] * (1 - gt) + deep[2] * gt
+      colors[i * 3]     = teal[0] * (1 - gt) + deep[0] * gt
+      colors[i * 3 + 1] = teal[1] * (1 - gt) + deep[1] * gt
+      colors[i * 3 + 2] = teal[2] * (1 - gt) + deep[2] * gt
     } else {
-      colors[i * 3]     = cyan[0] * (1 - t) + deep[0] * t
-      colors[i * 3 + 1] = cyan[1] * (1 - t) + deep[1] * t
-      colors[i * 3 + 2] = cyan[2] * (1 - t) + deep[2] * t
+      colors[i * 3]     = pink[0] * (1 - t) + deep[0] * t
+      colors[i * 3 + 1] = pink[1] * (1 - t) + deep[1] * t
+      colors[i * 3 + 2] = pink[2] * (1 - t) + deep[2] * t
     }
   }
 
@@ -125,7 +125,7 @@ export default function PlasticDepthModel() {
       })
       renderer.setSize(W, H)
       renderer.setPixelRatio(devicePixelRatio)
-      renderer.setClearColor(0x0a0e1a, 1)
+      renderer.setClearColor(0x0D2B35, 1)
 
       /* scene & camera */
       const scene  = new THREE.Scene()
@@ -136,7 +136,7 @@ export default function PlasticDepthModel() {
       /* wireframe grid at y=2 */
       const gridGeo  = new THREE.PlaneGeometry(220, 220, 30, 30)
       const gridMat  = new THREE.MeshBasicMaterial({
-        color: 0x1a2535,
+        color: 0x1a4050,
         wireframe: true,
         transparent: true,
         opacity: 0.3,
@@ -160,7 +160,7 @@ export default function PlasticDepthModel() {
         ])
         lineGeo.setAttribute('position', new THREE.BufferAttribute(pts, 3))
         const lineMat = new THREE.LineBasicMaterial({
-          color: 0x1a2535,
+          color: 0x1a4050,
           transparent: true,
           opacity: 0.5,
         })
@@ -361,50 +361,50 @@ export default function PlasticDepthModel() {
     <div
       ref={containerRef}
       className="relative w-full rounded-xl overflow-hidden select-none"
-      style={{ background: '#0a0e1a', aspectRatio: '16/9' }}
+      style={{ background: '#0D2B35', aspectRatio: '16/9' }}
     >
       <canvas ref={canvasRef} className="block w-full h-full" />
 
       {/* Badge top-left */}
       <div className="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/50 backdrop-blur-sm">
-        <span className="font-mono text-[10px] tracking-wider text-[#8899AA] uppercase">
+        <span className="font-mono text-[10px] tracking-wider text-[#7AA8B8] uppercase">
           Central Pacific Gyre — Depth Profile
         </span>
       </div>
 
       {/* Badge top-right */}
       <div className="absolute top-3 right-3 px-2.5 py-1 rounded bg-black/50 backdrop-blur-sm">
-        <span className="font-mono text-[10px] tracking-wider text-[#E8C547] uppercase">
+        <span className="font-mono text-[10px] tracking-wider text-[#2A6070] uppercase">
           ⚠ Simulated Data — Portfolio
         </span>
       </div>
 
       {/* Stats panel */}
       <div className="absolute top-11 left-3 px-2.5 py-2 rounded bg-black/40 backdrop-blur-sm space-y-1">
-        <div className="font-mono text-[11px] text-[#8899AA]">
-          PARTICLES: <span className="text-[#00D4FF]">{visibleCount.toLocaleString()}</span>
+        <div className="font-mono text-[11px] text-[#7AA8B8]">
+          PARTICLES: <span className="text-[#E85B8A]">{visibleCount.toLocaleString()}</span>
         </div>
-        <div className="font-mono text-[11px] text-[#8899AA]">
-          DEPTH RANGE: <span className="text-[#00D4FF]">0–{maxDepth}m</span>
+        <div className="font-mono text-[11px] text-[#7AA8B8]">
+          DEPTH RANGE: <span className="text-[#E85B8A]">0–{maxDepth}m</span>
         </div>
-        <div className="font-mono text-[11px] text-[#8899AA]">
-          PEAK ZONE: <span className="text-[#00D4FF]">{peakLabel}</span>
+        <div className="font-mono text-[11px] text-[#7AA8B8]">
+          PEAK ZONE: <span className="text-[#E85B8A]">{peakLabel}</span>
         </div>
       </div>
 
       {/* Tooltip */}
       {tooltip && (
         <div
-          className="absolute pointer-events-none px-3 py-2 rounded bg-black/80 backdrop-blur-sm border border-[#00D4FF]/30"
+          className="absolute pointer-events-none px-3 py-2 rounded bg-black/80 backdrop-blur-sm border border-[#E85B8A]/30"
           style={{ left: tooltip.x + 12, top: tooltip.y - 20 }}
         >
-          <div className="font-mono text-[10px] text-[#8899AA] uppercase mb-0.5">
+          <div className="font-mono text-[10px] text-[#7AA8B8] uppercase mb-0.5">
             {tooltip.zone}
           </div>
-          <div className="font-mono text-[11px] text-[#00D4FF]">
+          <div className="font-mono text-[11px] text-[#E85B8A]">
             DEPTH: {tooltip.depth}m
           </div>
-          <div className="font-mono text-[11px] text-[#E8C547]">
+          <div className="font-mono text-[11px] text-[#2A6070]">
             DENSITY: {tooltip.density} items/m³
           </div>
         </div>
@@ -413,13 +413,13 @@ export default function PlasticDepthModel() {
       {/* Controls panel */}
       <div
         className="absolute bottom-0 left-0 right-0 px-5 pt-10 pb-4"
-        style={{ background: 'linear-gradient(transparent, rgba(10,14,26,0.95))' }}
+        style={{ background: 'linear-gradient(transparent, rgba(13,43,53,0.95))' }}
       >
         <div className="flex flex-wrap items-end gap-6">
           {/* Max Depth slider */}
           <label className="flex flex-col gap-1.5 flex-1 min-w-[140px]">
-            <span className="font-mono text-[11px] text-[#8899AA] tracking-wider uppercase">
-              Max Depth <span className="text-[#00D4FF]">{maxDepth}m</span>
+            <span className="font-mono text-[11px] text-[#7AA8B8] tracking-wider uppercase">
+              Max Depth <span className="text-[#E85B8A]">{maxDepth}m</span>
             </span>
             <input
               type="range"
@@ -428,14 +428,14 @@ export default function PlasticDepthModel() {
               step={10}
               value={maxDepth}
               onChange={(e) => setMaxDepth(Number(e.target.value))}
-              className="accent-[#00D4FF] h-1 cursor-pointer"
+              className="accent-[#E85B8A] h-1 cursor-pointer"
             />
           </label>
 
           {/* Opacity slider */}
           <label className="flex flex-col gap-1.5 flex-1 min-w-[120px]">
-            <span className="font-mono text-[11px] text-[#8899AA] tracking-wider uppercase">
-              Opacity <span className="text-[#00D4FF]">{opacity}%</span>
+            <span className="font-mono text-[11px] text-[#7AA8B8] tracking-wider uppercase">
+              Opacity <span className="text-[#E85B8A]">{opacity}%</span>
             </span>
             <input
               type="range"
@@ -444,7 +444,7 @@ export default function PlasticDepthModel() {
               step={5}
               value={opacity}
               onChange={(e) => setOpacity(Number(e.target.value))}
-              className="accent-[#00D4FF] h-1 cursor-pointer"
+              className="accent-[#E85B8A] h-1 cursor-pointer"
             />
           </label>
 
@@ -454,21 +454,21 @@ export default function PlasticDepthModel() {
               onClick={toggleAutoRot}
               className={`font-mono text-[11px] tracking-wider uppercase px-3 py-1.5 rounded border transition-colors cursor-pointer ${
                 autoRot
-                  ? 'border-[#00D4FF]/50 text-[#00D4FF] bg-[#00D4FF]/10'
-                  : 'border-[#8899AA]/30 text-[#8899AA] bg-transparent'
+                  ? 'border-[#E85B8A]/50 text-[#E85B8A] bg-[#E85B8A]/10'
+                  : 'border-[#7AA8B8]/30 text-[#7AA8B8] bg-transparent'
               }`}
             >
               Auto Rot
             </button>
             <button
               onClick={handleSurface}
-              className="font-mono text-[11px] tracking-wider uppercase px-3 py-1.5 rounded border border-[#8899AA]/30 text-[#8899AA] hover:text-[#00D4FF] hover:border-[#00D4FF]/50 transition-colors cursor-pointer"
+              className="font-mono text-[11px] tracking-wider uppercase px-3 py-1.5 rounded border border-[#7AA8B8]/30 text-[#7AA8B8] hover:text-[#E85B8A] hover:border-[#E85B8A]/50 transition-colors cursor-pointer"
             >
               Surface
             </button>
             <button
               onClick={handleDeepCut}
-              className="font-mono text-[11px] tracking-wider uppercase px-3 py-1.5 rounded border border-[#8899AA]/30 text-[#8899AA] hover:text-[#00D4FF] hover:border-[#00D4FF]/50 transition-colors cursor-pointer"
+              className="font-mono text-[11px] tracking-wider uppercase px-3 py-1.5 rounded border border-[#7AA8B8]/30 text-[#7AA8B8] hover:text-[#E85B8A] hover:border-[#E85B8A]/50 transition-colors cursor-pointer"
             >
               Deep Cut
             </button>
