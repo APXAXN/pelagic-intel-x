@@ -55,7 +55,8 @@ function StakeholderMatrix() {
       <h3 className="font-mono text-xs tracking-widest text-gold uppercase mb-6">
         Stakeholder Communications Matrix
       </h3>
-      <div className="overflow-x-auto">
+      {/* Desktop table */}
+      <div className="hidden md:block overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-ocean-border">
@@ -84,6 +85,27 @@ function StakeholderMatrix() {
             ))}
           </tbody>
         </table>
+      </div>
+      {/* Mobile stacked cards */}
+      <div className="md:hidden space-y-4">
+        {STAKEHOLDERS.map((s, i) => (
+          <motion.div
+            key={s.group}
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.4, delay: i * 0.08 }}
+            className="bg-ocean-surface border border-ocean-border rounded-lg p-4 space-y-2"
+          >
+            <div className="font-body font-semibold text-text-primary">{s.group}</div>
+            <div className="text-xs text-text-dim font-mono uppercase tracking-wider">Interest</div>
+            <div className="text-sm text-text-secondary">{s.interest}</div>
+            <div className="text-xs text-text-dim font-mono uppercase tracking-wider mt-2">Ask</div>
+            <div className="text-sm text-cyan font-mono">{s.ask}</div>
+            <div className="text-xs text-text-dim font-mono uppercase tracking-wider mt-2">Message</div>
+            <div className="text-sm text-text-secondary italic">{s.message}</div>
+            <div className="text-xs text-text-dim mt-2">{s.channel}</div>
+          </motion.div>
+        ))}
       </div>
     </motion.div>
   )

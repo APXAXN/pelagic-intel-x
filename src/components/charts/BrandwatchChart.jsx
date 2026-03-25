@@ -7,7 +7,7 @@ const TOPIC_COLORS = {
   'ocean cleanup technology': '#7AA8B8',
   'plastic pollution regulation': '#c4326a',
   'marine debris': '#7AA8B8',
-  'AI environmental monitoring': '#A78BFA',
+  'AI environmental monitoring': '#c4326a',
 }
 
 const SHORT_LABELS = {

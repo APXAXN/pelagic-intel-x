@@ -75,7 +75,7 @@ const TIMELINE_PHASES = [
     title: 'Policy Impact',
     weeks: 'Week 9–12',
     items: ['Joint report release', 'Policy briefings', 'Op-ed placements', 'Google Ads campaign'],
-    color: '#A78BFA',
+    color: '#E85B8A',
   },
 ]
 

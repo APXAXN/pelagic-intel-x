@@ -27,7 +27,7 @@ export function Chapter1() {
 
       {/* Stats row */}
       <RevealOnScroll className="mb-20">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <StatCard value={1053557} label="Social Mentions" suffix="+" delay={0} />
           <StatCard value={8} label="Keywords Tracked" delay={0.1} />
           <StatCard value={4} label="Subreddits Mined" delay={0.2} />

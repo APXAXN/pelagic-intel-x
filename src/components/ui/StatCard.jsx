@@ -46,7 +46,7 @@ export function StatCard({ value, label, suffix = '', prefix = '', delay = 0 }) 
       transition={{ duration: 0.6, delay }}
       className="bg-ocean-surface border border-ocean-border rounded-lg p-6 text-center"
     >
-      <div className="font-mono text-3xl md:text-4xl font-bold text-cyan mb-2">
+      <div className="font-mono text-2xl md:text-4xl font-bold text-cyan mb-2">
         {prefix}{displayValue}{suffix}
       </div>
       <div className="text-sm text-text-secondary uppercase tracking-wider">

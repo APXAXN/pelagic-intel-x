@@ -366,21 +366,21 @@ export default function PlasticDepthModel() {
       <canvas ref={canvasRef} className="block w-full h-full" />
 
       {/* Badge top-left */}
-      <div className="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/50 backdrop-blur-sm">
-        <span className="font-mono text-[10px] tracking-wider text-[#7AA8B8] uppercase">
-          Central Pacific Gyre — Depth Profile
+      <div className="absolute top-2 left-2 md:top-3 md:left-3 px-2 py-0.5 md:px-2.5 md:py-1 rounded bg-black/50 backdrop-blur-sm">
+        <span className="font-mono text-[8px] md:text-[10px] tracking-wider text-[#7AA8B8] uppercase">
+          <span className="hidden md:inline">Central Pacific Gyre — </span>Depth Profile
         </span>
       </div>
 
       {/* Badge top-right */}
-      <div className="absolute top-3 right-3 px-2.5 py-1 rounded bg-black/50 backdrop-blur-sm">
-        <span className="font-mono text-[10px] tracking-wider text-[#2A6070] uppercase">
-          ⚠ Simulated Data — Portfolio
+      <div className="absolute top-2 right-2 md:top-3 md:right-3 px-2 py-0.5 md:px-2.5 md:py-1 rounded bg-black/50 backdrop-blur-sm">
+        <span className="font-mono text-[8px] md:text-[10px] tracking-wider text-[#2A6070] uppercase">
+          ⚠ <span className="hidden md:inline">Simulated Data — </span>Portfolio
         </span>
       </div>
 
       {/* Stats panel */}
-      <div className="absolute top-11 left-3 px-2.5 py-2 rounded bg-black/40 backdrop-blur-sm space-y-1">
+      <div className="absolute top-8 left-2 md:top-11 md:left-3 px-2 py-1.5 md:px-2.5 md:py-2 rounded bg-black/40 backdrop-blur-sm space-y-0.5 md:space-y-1">
         <div className="font-mono text-[11px] text-[#7AA8B8]">
           PARTICLES: <span className="text-[#E85B8A]">{visibleCount.toLocaleString()}</span>
         </div>
@@ -415,10 +415,10 @@ export default function PlasticDepthModel() {
         className="absolute bottom-0 left-0 right-0 px-5 pt-10 pb-4"
         style={{ background: 'linear-gradient(transparent, rgba(13,43,53,0.95))' }}
       >
-        <div className="flex flex-wrap items-end gap-6">
+        <div className="flex flex-wrap items-end gap-3 md:gap-6">
           {/* Max Depth slider */}
-          <label className="flex flex-col gap-1.5 flex-1 min-w-[140px]">
-            <span className="font-mono text-[11px] text-[#7AA8B8] tracking-wider uppercase">
+          <label className="flex flex-col gap-1 md:gap-1.5 flex-1 min-w-[100px] md:min-w-[140px]">
+            <span className="font-mono text-[9px] md:text-[11px] text-[#7AA8B8] tracking-wider uppercase">
               Max Depth <span className="text-[#E85B8A]">{maxDepth}m</span>
             </span>
             <input
@@ -433,8 +433,8 @@ export default function PlasticDepthModel() {
           </label>
 
           {/* Opacity slider */}
-          <label className="flex flex-col gap-1.5 flex-1 min-w-[120px]">
-            <span className="font-mono text-[11px] text-[#7AA8B8] tracking-wider uppercase">
+          <label className="flex flex-col gap-1 md:gap-1.5 flex-1 min-w-[80px] md:min-w-[120px]">
+            <span className="font-mono text-[9px] md:text-[11px] text-[#7AA8B8] tracking-wider uppercase">
               Opacity <span className="text-[#E85B8A]">{opacity}%</span>
             </span>
             <input
@@ -449,10 +449,10 @@ export default function PlasticDepthModel() {
           </label>
 
           {/* Buttons */}
-          <div className="flex gap-2">
+          <div className="flex gap-1.5 md:gap-2">
             <button
               onClick={toggleAutoRot}
-              className={`font-mono text-[11px] tracking-wider uppercase px-3 py-1.5 rounded border transition-colors cursor-pointer ${
+              className={`font-mono text-[9px] md:text-[11px] tracking-wider uppercase px-2 py-1 md:px-3 md:py-1.5 rounded border transition-colors cursor-pointer ${
                 autoRot
                   ? 'border-[#E85B8A]/50 text-[#E85B8A] bg-[#E85B8A]/10'
                   : 'border-[#7AA8B8]/30 text-[#7AA8B8] bg-transparent'
@@ -462,13 +462,13 @@ export default function PlasticDepthModel() {
             </button>
             <button
               onClick={handleSurface}
-              className="font-mono text-[11px] tracking-wider uppercase px-3 py-1.5 rounded border border-[#7AA8B8]/30 text-[#7AA8B8] hover:text-[#E85B8A] hover:border-[#E85B8A]/50 transition-colors cursor-pointer"
+              className="font-mono text-[9px] md:text-[11px] tracking-wider uppercase px-2 py-1 md:px-3 md:py-1.5 rounded border border-[#7AA8B8]/30 text-[#7AA8B8] hover:text-[#E85B8A] hover:border-[#E85B8A]/50 transition-colors cursor-pointer"
             >
               Surface
             </button>
             <button
               onClick={handleDeepCut}
-              className="font-mono text-[11px] tracking-wider uppercase px-3 py-1.5 rounded border border-[#7AA8B8]/30 text-[#7AA8B8] hover:text-[#E85B8A] hover:border-[#E85B8A]/50 transition-colors cursor-pointer"
+              className="font-mono text-[9px] md:text-[11px] tracking-wider uppercase px-2 py-1 md:px-3 md:py-1.5 rounded border border-[#7AA8B8]/30 text-[#7AA8B8] hover:text-[#E85B8A] hover:border-[#E85B8A]/50 transition-colors cursor-pointer"
             >
               Deep Cut
             </button>
