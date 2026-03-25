@@ -1,0 +1,444 @@
+{
+  "source": "framing_fidelity_analysis",
+  "generated": "2026-03-25T16:10:56.345864",
+  "method": "token-level Jaccard similarity + exact/partial match scoring",
+  "campaign_window": "90 days (6 \u00d7 15-day periods)",
+  "source_frames_count": 8,
+  "channels_analyzed": [
+    "press",
+    "social",
+    "policy",
+    "academic"
+  ],
+  "seed": 42,
+  "metrics": {
+    "overall": {
+      "ffi": 0.3459,
+      "total_mentions": 2015,
+      "exact_rate": 0.1682,
+      "partial_rate": 0.206,
+      "drift_rate": 0.6258,
+      "exact_count": 339,
+      "partial_count": 415,
+      "drifted_count": 1261
+    },
+    "by_channel": {
+      "press": {
+        "mention_count": 226,
+        "ffi": 0.6046,
+        "exact_rate": 0.3584,
+        "avg_jaccard": 0.5088
+      },
+      "social": {
+        "mention_count": 1691,
+        "ffi": 0.2955,
+        "exact_rate": 0.1342,
+        "avg_jaccard": 0.2542
+      },
+      "policy": {
+        "mention_count": 62,
+        "ffi": 0.6127,
+        "exact_rate": 0.3065,
+        "avg_jaccard": 0.4936
+      },
+      "academic": {
+        "mention_count": 36,
+        "ffi": 0.633,
+        "exact_rate": 0.3333,
+        "avg_jaccard": 0.5217
+      }
+    },
+    "by_frame": {
+      "f1": {
+        "frame": "first AI-powered plastic density map",
+        "category": "novelty",
+        "mention_count": 255,
+        "ffi": 0.4144,
+        "exact_rate": 0.1686,
+        "avg_jaccard": 0.3842
+      },
+      "f2": {
+        "frame": "580,000 particles per square kilometer",
+        "category": "scale",
+        "mention_count": 252,
+        "ffi": 0.3375,
+        "exact_rate": 0.1468,
+        "avg_jaccard": 0.262
+      },
+      "f3": {
+        "frame": "satellite-AI fusion pipeline",
+        "category": "technology",
+        "mention_count": 243,
+        "ffi": 0.2844,
+        "exact_rate": 0.177,
+        "avg_jaccard": 0.2223
+      },
+      "f4": {
+        "frame": "40 percent above previous predictions",
+        "category": "urgency",
+        "mention_count": 244,
+        "ffi": 0.3166,
+        "exact_rate": 0.1557,
+        "avg_jaccard": 0.236
+      },
+      "f5": {
+        "frame": "the ocean has a memory",
+        "category": "narrative",
+        "mention_count": 255,
+        "ffi": 0.3778,
+        "exact_rate": 0.1725,
+        "avg_jaccard": 0.3509
+      },
+      "f6": {
+        "frame": "real-time density monitoring",
+        "category": "capability",
+        "mention_count": 245,
+        "ffi": 0.3201,
+        "exact_rate": 0.1388,
+        "avg_jaccard": 0.2765
+      },
+      "f7": {
+        "frame": "evidentiary standard for international law",
+        "category": "policy",
+        "mention_count": 244,
+        "ffi": 0.3498,
+        "exact_rate": 0.1598,
+        "avg_jaccard": 0.2963
+      },
+      "f8": {
+        "frame": "mapping the invisible",
+        "category": "brand",
+        "mention_count": 277,
+        "ffi": 0.3607,
+        "exact_rate": 0.2202,
+        "avg_jaccard": 0.3217
+      }
+    },
+    "by_period": [
+      {
+        "period": "Day 1\u201315",
+        "period_idx": 0,
+        "mention_count": 605,
+        "ffi": 0.444,
+        "exact_rate": 0.2298,
+        "drift_rate": 0.556
+      },
+      {
+        "period": "Day 16\u201330",
+        "period_idx": 1,
+        "mention_count": 334,
+        "ffi": 0.4067,
+        "exact_rate": 0.2216,
+        "drift_rate": 0.5933
+      },
+      {
+        "period": "Day 31\u201345",
+        "period_idx": 2,
+        "mention_count": 282,
+        "ffi": 0.2849,
+        "exact_rate": 0.1241,
+        "drift_rate": 0.7151
+      },
+      {
+        "period": "Day 46\u201360",
+        "period_idx": 3,
+        "mention_count": 347,
+        "ffi": 0.2926,
+        "exact_rate": 0.1239,
+        "drift_rate": 0.7074
+      },
+      {
+        "period": "Day 61\u201375",
+        "period_idx": 4,
+        "mention_count": 230,
+        "ffi": 0.2787,
+        "exact_rate": 0.1217,
+        "drift_rate": 0.7213
+      },
+      {
+        "period": "Day 76\u201390",
+        "period_idx": 5,
+        "mention_count": 217,
+        "ffi": 0.2148,
+        "exact_rate": 0.0922,
+        "drift_rate": 0.7852
+      }
+    ],
+    "channel_period_series": {
+      "press": [
+        {
+          "period": "Day 1\u201315",
+          "period_idx": 0,
+          "ffi": 0.7237,
+          "mention_count": 66
+        },
+        {
+          "period": "Day 16\u201330",
+          "period_idx": 1,
+          "ffi": 0.6853,
+          "mention_count": 41
+        },
+        {
+          "period": "Day 31\u201345",
+          "period_idx": 2,
+          "ffi": 0.5741,
+          "mention_count": 33
+        },
+        {
+          "period": "Day 46\u201360",
+          "period_idx": 3,
+          "ffi": 0.5162,
+          "mention_count": 37
+        },
+        {
+          "period": "Day 61\u201375",
+          "period_idx": 4,
+          "ffi": 0.6412,
+          "mention_count": 25
+        },
+        {
+          "period": "Day 76\u201390",
+          "period_idx": 5,
+          "ffi": 0.279,
+          "mention_count": 24
+        }
+      ],
+      "social": [
+        {
+          "period": "Day 1\u201315",
+          "period_idx": 0,
+          "ffi": 0.3949,
+          "mention_count": 510
+        },
+        {
+          "period": "Day 16\u201330",
+          "period_idx": 1,
+          "ffi": 0.3626,
+          "mention_count": 275
+        },
+        {
+          "period": "Day 31\u201345",
+          "period_idx": 2,
+          "ffi": 0.2261,
+          "mention_count": 234
+        },
+        {
+          "period": "Day 46\u201360",
+          "period_idx": 3,
+          "ffi": 0.2444,
+          "mention_count": 293
+        },
+        {
+          "period": "Day 61\u201375",
+          "period_idx": 4,
+          "ffi": 0.2142,
+          "mention_count": 194
+        },
+        {
+          "period": "Day 76\u201390",
+          "period_idx": 5,
+          "ffi": 0.1756,
+          "mention_count": 185
+        }
+      ],
+      "policy": [
+        {
+          "period": "Day 1\u201315",
+          "period_idx": 0,
+          "ffi": 0.6679,
+          "mention_count": 17
+        },
+        {
+          "period": "Day 16\u201330",
+          "period_idx": 1,
+          "ffi": 0.4949,
+          "mention_count": 12
+        },
+        {
+          "period": "Day 31\u201345",
+          "period_idx": 2,
+          "ffi": 0.5308,
+          "mention_count": 10
+        },
+        {
+          "period": "Day 46\u201360",
+          "period_idx": 3,
+          "ffi": 0.6795,
+          "mention_count": 11
+        },
+        {
+          "period": "Day 61\u201375",
+          "period_idx": 4,
+          "ffi": 0.4546,
+          "mention_count": 7
+        },
+        {
+          "period": "Day 76\u201390",
+          "period_idx": 5,
+          "ffi": 0.9458,
+          "mention_count": 5
+        }
+      ],
+      "academic": [
+        {
+          "period": "Day 1\u201315",
+          "period_idx": 0,
+          "ffi": 0.6766,
+          "mention_count": 12
+        },
+        {
+          "period": "Day 16\u201330",
+          "period_idx": 1,
+          "ffi": 0.345,
+          "mention_count": 6
+        },
+        {
+          "period": "Day 31\u201345",
+          "period_idx": 2,
+          "ffi": 0.64,
+          "mention_count": 5
+        },
+        {
+          "period": "Day 46\u201360",
+          "period_idx": 3,
+          "ffi": 0.5583,
+          "mention_count": 6
+        },
+        {
+          "period": "Day 61\u201375",
+          "period_idx": 4,
+          "ffi": 0.8375,
+          "mention_count": 4
+        },
+        {
+          "period": "Day 76\u201390",
+          "period_idx": 5,
+          "ffi": 0.9,
+          "mention_count": 3
+        }
+      ]
+    },
+    "top_drift_examples": [
+      {
+        "source_frame": "40 percent above previous predictions",
+        "downstream_text": "higher than models suggested",
+        "channel": "press",
+        "jaccard": 0.0,
+        "period": "Day 1\u201315"
+      },
+      {
+        "source_frame": "the ocean has a memory",
+        "downstream_text": "plastic accumulates over time",
+        "channel": "press",
+        "jaccard": 0.0,
+        "period": "Day 1\u201315"
+      },
+      {
+        "source_frame": "real-time density monitoring",
+        "downstream_text": "live pollution data",
+        "channel": "press",
+        "jaccard": 0.0,
+        "period": "Day 1\u201315"
+      },
+      {
+        "source_frame": "580,000 particles per square kilometer",
+        "downstream_text": "massive particle concentrations",
+        "channel": "press",
+        "jaccard": 0.0,
+        "period": "Day 1\u201315"
+      },
+      {
+        "source_frame": "40 percent above previous predictions",
+        "downstream_text": "much worse than thought",
+        "channel": "press",
+        "jaccard": 0.0,
+        "period": "Day 1\u201315"
+      },
+      {
+        "source_frame": "580,000 particles per square kilometer",
+        "downstream_text": "massive particle concentrations",
+        "channel": "social",
+        "jaccard": 0.0,
+        "period": "Day 1\u201315"
+      },
+      {
+        "source_frame": "40 percent above previous predictions",
+        "downstream_text": "significantly more than expected",
+        "channel": "social",
+        "jaccard": 0.0,
+        "period": "Day 1\u201315"
+      },
+      {
+        "source_frame": "evidentiary standard for international law",
+        "downstream_text": "supporting treaty enforcement",
+        "channel": "social",
+        "jaccard": 0.0,
+        "period": "Day 1\u201315"
+      },
+      {
+        "source_frame": "580,000 particles per square kilometer",
+        "downstream_text": "massive particle concentrations",
+        "channel": "social",
+        "jaccard": 0.0,
+        "period": "Day 1\u201315"
+      },
+      {
+        "source_frame": "real-time density monitoring",
+        "downstream_text": "live pollution data",
+        "channel": "social",
+        "jaccard": 0.0,
+        "period": "Day 1\u201315"
+      }
+    ]
+  },
+  "source_frames": [
+    {
+      "id": "f1",
+      "frame": "first AI-powered plastic density map",
+      "category": "novelty",
+      "priority": "primary"
+    },
+    {
+      "id": "f2",
+      "frame": "580,000 particles per square kilometer",
+      "category": "scale",
+      "priority": "primary"
+    },
+    {
+      "id": "f3",
+      "frame": "satellite-AI fusion pipeline",
+      "category": "technology",
+      "priority": "primary"
+    },
+    {
+      "id": "f4",
+      "frame": "40 percent above previous predictions",
+      "category": "urgency",
+      "priority": "primary"
+    },
+    {
+      "id": "f5",
+      "frame": "the ocean has a memory",
+      "category": "narrative",
+      "priority": "secondary"
+    },
+    {
+      "id": "f6",
+      "frame": "real-time density monitoring",
+      "category": "capability",
+      "priority": "secondary"
+    },
+    {
+      "id": "f7",
+      "frame": "evidentiary standard for international law",
+      "category": "policy",
+      "priority": "secondary"
+    },
+    {
+      "id": "f8",
+      "frame": "mapping the invisible",
+      "category": "brand",
+      "priority": "primary"
+    }
+  ]
+}

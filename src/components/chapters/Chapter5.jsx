@@ -3,6 +3,7 @@ import { ChapterWrapper } from '@/components/layout/ChapterWrapper'
 import { RevealOnScroll } from '@/components/ui/RevealOnScroll'
 import { StatCard } from '@/components/ui/StatCard'
 import { useInView } from '@/hooks/useInView'
+import { FramingFidelitySection } from '@/components/charts/FramingFidelityChart'
 
 const KPIS = [
   { metric: 'Press Pickups', target: '15+', baseline: '0', source: 'Media monitoring', timeframe: '30 days' },
@@ -201,6 +202,9 @@ export function Chapter5() {
       <RevealOnScroll className="mb-8">
         <KPICards />
       </RevealOnScroll>
+
+      {/* Framing fidelity analysis */}
+      <FramingFidelitySection />
 
       {/* 90-day timeline */}
       <Timeline />
