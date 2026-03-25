@@ -1,0 +1,122 @@
+
+<style>
+.day-card { background: var(--color-background-secondary); border-radius: 10px; border: 0.5px solid var(--color-border-tertiary); padding: 14px 16px; margin-bottom: 10px; }
+.day-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.day-badge { font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.day-title { font-size: 14px; font-weight: 500; color: var(--color-text-primary); }
+.day-subtitle { font-size: 12px; color: var(--color-text-secondary); margin-top: 1px; }
+.task-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 6px; }
+.task { font-size: 12px; color: var(--color-text-secondary); background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: 6px; padding: 6px 9px; display: flex; gap: 6px; align-items: flex-start; line-height: 1.4; }
+.dot { width: 6px; height: 6px; border-radius: 50%; margin-top: 3px; flex-shrink: 0; }
+.output-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.output-pill { font-size: 11px; padding: 3px 9px; border-radius: 20px; }
+</style>
+
+<div class="day-card">
+  <div class="day-header">
+    <span class="day-badge" style="background:var(--color-background-info);color:var(--color-text-info)">Day 1</span>
+    <div><div class="day-title">Data & Intelligence</div><div class="day-subtitle">Pull everything before writing a word</div></div>
+  </div>
+  <div class="task-grid">
+    <div class="task"><span class="dot" style="background:#378ADD"></span>Configure Brandwatch queries — ocean plastic, AI environmental</div>
+    <div class="task"><span class="dot" style="background:#378ADD"></span>Pull Reddit via PRAW — r/environment, r/Futurology, r/collapse, r/ML</div>
+    <div class="task"><span class="dot" style="background:#378ADD"></span>Pull Google Trends via Pytrends</div>
+    <div class="task"><span class="dot" style="background:#378ADD"></span>Pull keyword landscape via SerpApi</div>
+    <div class="task"><span class="dot" style="background:#378ADD"></span>Run NLP — frequency, clusters, vocabulary gap analysis</div>
+    <div class="task"><span class="dot" style="background:#378ADD"></span>Document findings in FINDINGS.md</div>
+    <div class="task"><span class="dot" style="background:#378ADD"></span>Export all chart data as JSON/CSV</div>
+  </div>
+  <div class="output-row">
+    <span class="output-pill" style="background:var(--color-background-info);color:var(--color-text-info)">search_trends.json</span>
+    <span class="output-pill" style="background:var(--color-background-info);color:var(--color-text-info)">reddit_word_freq.json</span>
+    <span class="output-pill" style="background:var(--color-background-info);color:var(--color-text-info)">brandwatch_mentions.json</span>
+    <span class="output-pill" style="background:var(--color-background-info);color:var(--color-text-info)">vocabulary_gap.json</span>
+    <span class="output-pill" style="background:var(--color-background-info);color:var(--color-text-info)">FINDINGS.md</span>
+  </div>
+</div>
+
+<div class="day-card">
+  <div class="day-header">
+    <span class="day-badge" style="background:var(--color-background-success);color:var(--color-text-success)">Day 2</span>
+    <div><div class="day-title">Strategy & Collateral Writing</div><div class="day-subtitle">All written content, informed by Day 1 intelligence</div></div>
+  </div>
+  <div class="task-grid">
+    <div class="task"><span class="dot" style="background:#1D9E75"></span>Write audience segmentation framework</div>
+    <div class="task"><span class="dot" style="background:#1D9E75"></span>Write per-audience message architecture</div>
+    <div class="task"><span class="dot" style="background:#1D9E75"></span>Write press release — Mapping the Invisible</div>
+    <div class="task"><span class="dot" style="background:#1D9E75"></span>Write media one-pager</div>
+    <div class="task"><span class="dot" style="background:#1D9E75"></span>Write op-ed — The Ocean Has a Memory</div>
+    <div class="task"><span class="dot" style="background:#1D9E75"></span>Write stakeholder communications matrix</div>
+    <div class="task"><span class="dot" style="background:#1D9E75"></span>Write campaign strategy memo</div>
+    <div class="task"><span class="dot" style="background:#1D9E75"></span>Write 90-day roadmap + KPI framework</div>
+    <div class="task"><span class="dot" style="background:#1D9E75"></span>Draft X thread (7 posts) + LinkedIn post</div>
+  </div>
+  <div class="output-row">
+    <span class="output-pill" style="background:var(--color-background-success);color:var(--color-text-success)">7 written drafts</span>
+    <span class="output-pill" style="background:var(--color-background-success);color:var(--color-text-success)">Social content brief</span>
+    <span class="output-pill" style="background:var(--color-background-success);color:var(--color-text-success)">KPI framework</span>
+  </div>
+</div>
+
+<div class="day-card">
+  <div class="day-header">
+    <span class="day-badge" style="background:var(--color-background-warning);color:var(--color-text-warning)">Day 3</span>
+    <div><div class="day-title">Design & Collateral Production</div><div class="day-subtitle">PDFs designed, map built, charts assembled</div></div>
+  </div>
+  <div class="task-grid">
+    <div class="task"><span class="dot" style="background:#BA7517"></span>Design all 7 PDFs in Figma / InDesign</div>
+    <div class="task"><span class="dot" style="background:#BA7517"></span>Export PDFs to /public/downloads/</div>
+    <div class="task"><span class="dot" style="background:#BA7517"></span>Build Mapbox synthetic density layer (GeoJSON)</div>
+    <div class="task"><span class="dot" style="background:#BA7517"></span>Build Recharts components from processed JSON</div>
+    <div class="task"><span class="dot" style="background:#BA7517"></span>Set up React + Vite + Tailwind + Scrollama scaffold</div>
+    <div class="task"><span class="dot" style="background:#BA7517"></span>Configure design tokens in Tailwind config</div>
+  </div>
+  <div class="output-row">
+    <span class="output-pill" style="background:var(--color-background-warning);color:var(--color-text-warning)">7 PDFs → /public/downloads/</span>
+    <span class="output-pill" style="background:var(--color-background-warning);color:var(--color-text-warning)">plastic_density.geojson</span>
+    <span class="output-pill" style="background:var(--color-background-warning);color:var(--color-text-warning)">Project scaffold</span>
+  </div>
+</div>
+
+<div class="day-card">
+  <div class="day-header">
+    <span class="day-badge" style="background:var(--color-background-danger);color:var(--color-text-danger)">Day 4</span>
+    <div><div class="day-title">Full Build</div><div class="day-subtitle">All 5 chapters wired and animated</div></div>
+  </div>
+  <div class="task-grid">
+    <div class="task"><span class="dot" style="background:#E24B4A"></span>Build all 5 chapters as React components</div>
+    <div class="task"><span class="dot" style="background:#E24B4A"></span>Wire Scrollama triggers to chapter / section reveals</div>
+    <div class="task"><span class="dot" style="background:#E24B4A"></span>Integrate Framer Motion animations + staggered reveals</div>
+    <div class="task"><span class="dot" style="background:#E24B4A"></span>Embed Recharts visualizations (Ch. 1)</div>
+    <div class="task"><span class="dot" style="background:#E24B4A"></span>Embed Mapbox map with scan animation (Ch. 3)</div>
+    <div class="task"><span class="dot" style="background:#E24B4A"></span>Build collateral download panels (Ch. 3 + 4)</div>
+    <div class="task"><span class="dot" style="background:#E24B4A"></span>Build stakeholder map visualization (Ch. 2)</div>
+    <div class="task"><span class="dot" style="background:#E24B4A"></span>Build 90-day timeline component (Ch. 5)</div>
+    <div class="task"><span class="dot" style="background:#E24B4A"></span>Mobile responsive pass — Tailwind breakpoints</div>
+  </div>
+  <div class="output-row">
+    <span class="output-pill" style="background:var(--color-background-danger);color:var(--color-text-danger)">Full working site</span>
+    <span class="output-pill" style="background:var(--color-background-danger);color:var(--color-text-danger)">Map animated</span>
+    <span class="output-pill" style="background:var(--color-background-danger);color:var(--color-text-danger)">All downloads live</span>
+  </div>
+</div>
+
+<div class="day-card">
+  <div class="day-header">
+    <span class="day-badge" style="background:var(--color-background-secondary);color:var(--color-text-secondary);border:0.5px solid var(--color-border-secondary)">Day 5</span>
+    <div><div class="day-title">Polish & Deploy</div><div class="day-subtitle">Ship it. QA everything. Make it undeniable.</div></div>
+  </div>
+  <div class="task-grid">
+    <div class="task"><span class="dot" style="background:var(--color-text-secondary)"></span>Copy edit — all site text, callouts, chapter intros</div>
+    <div class="task"><span class="dot" style="background:var(--color-text-secondary)"></span>Animation timing refinement</div>
+    <div class="task"><span class="dot" style="background:var(--color-text-secondary)"></span>Lighthouse performance audit — target &gt;85 mobile</div>
+    <div class="task"><span class="dot" style="background:var(--color-text-secondary)"></span>Write GitHub README — methodology + pipeline docs</div>
+    <div class="task"><span class="dot" style="background:var(--color-text-secondary)"></span>Deploy to Vercel from main branch</div>
+    <div class="task"><span class="dot" style="background:var(--color-text-secondary)"></span>Final QA — Chrome, Safari, Firefox, iPhone 14</div>
+  </div>
+  <div class="output-row">
+    <span class="output-pill" style="background:var(--color-background-secondary);color:var(--color-text-secondary);border:0.5px solid var(--color-border-secondary)">Public Vercel URL</span>
+    <span class="output-pill" style="background:var(--color-background-secondary);color:var(--color-text-secondary);border:0.5px solid var(--color-border-secondary)">Public GitHub repo</span>
+    <span class="output-pill" style="background:var(--color-background-secondary);color:var(--color-text-secondary);border:0.5px solid var(--color-border-secondary)">Definition of Done ✓</span>
+  </div>
+</div>

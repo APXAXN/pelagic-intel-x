@@ -1,0 +1,907 @@
+{
+  "source": "reddit_nlp",
+  "corpus_size": 1475,
+  "unique_words": 727,
+  "top_words": [
+    {
+      "word": "plastic",
+      "count": 61
+    },
+    {
+      "word": "ocean",
+      "count": 43
+    },
+    {
+      "word": "satellite",
+      "count": 21
+    },
+    {
+      "word": "data",
+      "count": 20
+    },
+    {
+      "word": "real",
+      "count": 20
+    },
+    {
+      "word": "time",
+      "count": 19
+    },
+    {
+      "word": "problem",
+      "count": 18
+    },
+    {
+      "word": "scale",
+      "count": 15
+    },
+    {
+      "word": "density",
+      "count": 14
+    },
+    {
+      "word": "imagery",
+      "count": 13
+    },
+    {
+      "word": "cleanup",
+      "count": 13
+    },
+    {
+      "word": "monitoring",
+      "count": 13
+    },
+    {
+      "word": "map",
+      "count": 11
+    },
+    {
+      "word": "particles",
+      "count": 8
+    },
+    {
+      "word": "pollution",
+      "count": 8
+    },
+    {
+      "word": "microplastics",
+      "count": 7
+    },
+    {
+      "word": "microplastic",
+      "count": 7
+    },
+    {
+      "word": "policy",
+      "count": 7
+    },
+    {
+      "word": "work",
+      "count": 7
+    },
+    {
+      "word": "systems",
+      "count": 7
+    },
+    {
+      "word": "global",
+      "count": 7
+    },
+    {
+      "word": "accumulation",
+      "count": 7
+    },
+    {
+      "word": "voluntary",
+      "count": 6
+    },
+    {
+      "word": "pacific",
+      "count": 6
+    },
+    {
+      "word": "learning",
+      "count": 6
+    },
+    {
+      "word": "surface",
+      "count": 6
+    },
+    {
+      "word": "making",
+      "count": 6
+    },
+    {
+      "word": "environmental",
+      "count": 6
+    },
+    {
+      "word": "detection",
+      "count": 6
+    },
+    {
+      "word": "found",
+      "count": 5
+    },
+    {
+      "word": "every",
+      "count": 5
+    },
+    {
+      "word": "concentration",
+      "count": 5
+    },
+    {
+      "word": "models",
+      "count": 5
+    },
+    {
+      "word": "treaty",
+      "count": 5
+    },
+    {
+      "word": "negotiations",
+      "count": 5
+    },
+    {
+      "word": "without",
+      "count": 5
+    },
+    {
+      "word": "binding",
+      "count": 5
+    },
+    {
+      "word": "commitments",
+      "count": 5
+    },
+    {
+      "word": "production",
+      "count": 5
+    },
+    {
+      "word": "system",
+      "count": 5
+    },
+    {
+      "word": "mapping",
+      "count": 5
+    },
+    {
+      "word": "detecting",
+      "count": 5
+    },
+    {
+      "word": "computer",
+      "count": 5
+    },
+    {
+      "word": "vision",
+      "count": 5
+    },
+    {
+      "word": "human",
+      "count": 5
+    },
+    {
+      "word": "sea",
+      "count": 4
+    },
+    {
+      "word": "concentrations",
+      "count": 4
+    },
+    {
+      "word": "literally",
+      "count": 4
+    },
+    {
+      "word": "known",
+      "count": 4
+    },
+    {
+      "word": "current",
+      "count": 4
+    },
+    {
+      "word": "act",
+      "count": 4
+    },
+    {
+      "word": "maps",
+      "count": 4
+    },
+    {
+      "word": "higher",
+      "count": 4
+    },
+    {
+      "word": "zones",
+      "count": 4
+    },
+    {
+      "word": "bad",
+      "count": 4
+    },
+    {
+      "word": "anyone",
+      "count": 4
+    },
+    {
+      "word": "enough",
+      "count": 4
+    },
+    {
+      "word": "industry",
+      "count": 4
+    },
+    {
+      "word": "distribution",
+      "count": 4
+    },
+    {
+      "word": "waste",
+      "count": 4
+    },
+    {
+      "word": "better",
+      "count": 4
+    },
+    {
+      "word": "trash",
+      "count": 4
+    },
+    {
+      "word": "massive",
+      "count": 4
+    },
+    {
+      "word": "floating",
+      "count": 4
+    },
+    {
+      "word": "based",
+      "count": 4
+    },
+    {
+      "word": "spectral",
+      "count": 4
+    },
+    {
+      "word": "great",
+      "count": 4
+    },
+    {
+      "word": "application",
+      "count": 4
+    },
+    {
+      "word": "multispectral",
+      "count": 4
+    },
+    {
+      "word": "accuracy",
+      "count": 4
+    },
+    {
+      "word": "right",
+      "count": 4
+    },
+    {
+      "word": "sentinel",
+      "count": 4
+    },
+    {
+      "word": "smaller",
+      "count": 4
+    },
+    {
+      "word": "pipeline",
+      "count": 4
+    },
+    {
+      "word": "antarctic",
+      "count": 3
+    },
+    {
+      "word": "ice",
+      "count": 3
+    },
+    {
+      "word": "researchers",
+      "count": 3
+    },
+    {
+      "word": "types",
+      "count": 3
+    },
+    {
+      "word": "everywhere",
+      "count": 3
+    },
+    {
+      "word": "gets",
+      "count": 3
+    },
+    {
+      "word": "marine",
+      "count": 3
+    },
+    {
+      "word": "across",
+      "count": 3
+    },
+    {
+      "word": "areas",
+      "count": 3
+    },
+    {
+      "word": "tells",
+      "count": 3
+    },
+    {
+      "word": "efforts",
+      "count": 3
+    },
+    {
+      "word": "input",
+      "count": 3
+    },
+    {
+      "word": "works",
+      "count": 3
+    },
+    {
+      "word": "exactly",
+      "count": 3
+    },
+    {
+      "word": "plastics",
+      "count": 3
+    },
+    {
+      "word": "point",
+      "count": 3
+    },
+    {
+      "word": "another",
+      "count": 3
+    },
+    {
+      "word": "targets",
+      "count": 3
+    },
+    {
+      "word": "fossil",
+      "count": 3
+    },
+    {
+      "word": "goes",
+      "count": 3
+    },
+    {
+      "word": "meters",
+      "count": 3
+    },
+    {
+      "word": "entire",
+      "count": 3
+    },
+    {
+      "word": "built",
+      "count": 3
+    },
+    {
+      "word": "technology",
+      "count": 3
+    },
+    {
+      "word": "working",
+      "count": 3
+    },
+    {
+      "word": "approach",
+      "count": 3
+    }
+  ],
+  "bigram_collocations": [
+    {
+      "phrase": "computer vision",
+      "score": 8.2
+    },
+    {
+      "phrase": "plastics treaty",
+      "score": 8.2
+    },
+    {
+      "phrase": "voluntary commitments",
+      "score": 7.94
+    },
+    {
+      "phrase": "global plastics",
+      "score": 7.72
+    },
+    {
+      "phrase": "accumulation zones",
+      "score": 7.3
+    },
+    {
+      "phrase": "microplastic particles",
+      "score": 6.3
+    },
+    {
+      "phrase": "satellite imagery",
+      "score": 6.02
+    },
+    {
+      "phrase": "density mapping",
+      "score": 5.98
+    },
+    {
+      "phrase": "enough data",
+      "score": 5.79
+    },
+    {
+      "phrase": "real time",
+      "score": 5.76
+    },
+    {
+      "phrase": "floating plastic",
+      "score": 4.6
+    },
+    {
+      "phrase": "plastic production",
+      "score": 4.27
+    },
+    {
+      "phrase": "maps plastic",
+      "score": 4.18
+    },
+    {
+      "phrase": "ocean surface",
+      "score": 4.1
+    },
+    {
+      "phrase": "plastic pollution",
+      "score": 3.92
+    },
+    {
+      "phrase": "ocean plastic",
+      "score": 3.42
+    },
+    {
+      "phrase": "ocean cleanup",
+      "score": 2.98
+    },
+    {
+      "phrase": "plastic density",
+      "score": 2.37
+    },
+    {
+      "phrase": "plastic problem",
+      "score": 2.01
+    }
+  ],
+  "per_subreddit": {
+    "environment": {
+      "total_words": 523,
+      "top_25": [
+        {
+          "word": "plastic",
+          "count": 24
+        },
+        {
+          "word": "ocean",
+          "count": 19
+        },
+        {
+          "word": "time",
+          "count": 8
+        },
+        {
+          "word": "problem",
+          "count": 8
+        },
+        {
+          "word": "pollution",
+          "count": 6
+        },
+        {
+          "word": "satellite",
+          "count": 6
+        },
+        {
+          "word": "map",
+          "count": 6
+        },
+        {
+          "word": "found",
+          "count": 4
+        },
+        {
+          "word": "particles",
+          "count": 4
+        },
+        {
+          "word": "systems",
+          "count": 4
+        },
+        {
+          "word": "models",
+          "count": 4
+        },
+        {
+          "word": "scale",
+          "count": 4
+        },
+        {
+          "word": "negotiations",
+          "count": 4
+        },
+        {
+          "word": "data",
+          "count": 4
+        },
+        {
+          "word": "real",
+          "count": 4
+        },
+        {
+          "word": "antarctic",
+          "count": 3
+        },
+        {
+          "word": "sea",
+          "count": 3
+        },
+        {
+          "word": "ice",
+          "count": 3
+        },
+        {
+          "word": "microplastic",
+          "count": 3
+        },
+        {
+          "word": "concentrations",
+          "count": 3
+        },
+        {
+          "word": "literally",
+          "count": 3
+        },
+        {
+          "word": "voluntary",
+          "count": 3
+        },
+        {
+          "word": "act",
+          "count": 3
+        },
+        {
+          "word": "higher",
+          "count": 3
+        },
+        {
+          "word": "imagery",
+          "count": 3
+        }
+      ]
+    },
+    "Futurology": {
+      "total_words": 348,
+      "top_25": [
+        {
+          "word": "plastic",
+          "count": 13
+        },
+        {
+          "word": "ocean",
+          "count": 10
+        },
+        {
+          "word": "real",
+          "count": 9
+        },
+        {
+          "word": "cleanup",
+          "count": 9
+        },
+        {
+          "word": "satellite",
+          "count": 7
+        },
+        {
+          "word": "time",
+          "count": 7
+        },
+        {
+          "word": "data",
+          "count": 6
+        },
+        {
+          "word": "density",
+          "count": 6
+        },
+        {
+          "word": "scale",
+          "count": 5
+        },
+        {
+          "word": "problem",
+          "count": 5
+        },
+        {
+          "word": "making",
+          "count": 5
+        },
+        {
+          "word": "monitoring",
+          "count": 4
+        },
+        {
+          "word": "powered",
+          "count": 3
+        },
+        {
+          "word": "drones",
+          "count": 3
+        },
+        {
+          "word": "different",
+          "count": 3
+        },
+        {
+          "word": "distribution",
+          "count": 3
+        },
+        {
+          "word": "great",
+          "count": 3
+        },
+        {
+          "word": "map",
+          "count": 3
+        },
+        {
+          "word": "pacific",
+          "count": 3
+        },
+        {
+          "word": "imagery",
+          "count": 3
+        },
+        {
+          "word": "project",
+          "count": 3
+        },
+        {
+          "word": "policy",
+          "count": 3
+        },
+        {
+          "word": "right",
+          "count": 3
+        },
+        {
+          "word": "detect",
+          "count": 2
+        },
+        {
+          "word": "altitude",
+          "count": 2
+        }
+      ]
+    },
+    "collapse": {
+      "total_words": 257,
+      "top_25": [
+        {
+          "word": "plastic",
+          "count": 14
+        },
+        {
+          "word": "ocean",
+          "count": 8
+        },
+        {
+          "word": "production",
+          "count": 4
+        },
+        {
+          "word": "smaller",
+          "count": 4
+        },
+        {
+          "word": "particles",
+          "count": 4
+        },
+        {
+          "word": "every",
+          "count": 4
+        },
+        {
+          "word": "problem",
+          "count": 4
+        },
+        {
+          "word": "microplastics",
+          "count": 3
+        },
+        {
+          "word": "voluntary",
+          "count": 3
+        },
+        {
+          "word": "commitments",
+          "count": 3
+        },
+        {
+          "word": "binding",
+          "count": 3
+        },
+        {
+          "word": "food",
+          "count": 2
+        },
+        {
+          "word": "chain",
+          "count": 2
+        },
+        {
+          "word": "contamination",
+          "count": 2
+        },
+        {
+          "word": "scale",
+          "count": 2
+        },
+        {
+          "word": "eating",
+          "count": 2
+        },
+        {
+          "word": "water",
+          "count": 2
+        },
+        {
+          "word": "gets",
+          "count": 2
+        },
+        {
+          "word": "trash",
+          "count": 2
+        },
+        {
+          "word": "everything",
+          "count": 2
+        },
+        {
+          "word": "environmental",
+          "count": 2
+        },
+        {
+          "word": "human",
+          "count": 2
+        },
+        {
+          "word": "effects",
+          "count": 2
+        },
+        {
+          "word": "else",
+          "count": 2
+        },
+        {
+          "word": "ignore",
+          "count": 2
+        }
+      ]
+    },
+    "MachineLearning": {
+      "total_words": 347,
+      "top_25": [
+        {
+          "word": "plastic",
+          "count": 10
+        },
+        {
+          "word": "satellite",
+          "count": 8
+        },
+        {
+          "word": "data",
+          "count": 8
+        },
+        {
+          "word": "imagery",
+          "count": 7
+        },
+        {
+          "word": "ocean",
+          "count": 6
+        },
+        {
+          "word": "monitoring",
+          "count": 6
+        },
+        {
+          "word": "real",
+          "count": 6
+        },
+        {
+          "word": "detection",
+          "count": 6
+        },
+        {
+          "word": "density",
+          "count": 6
+        },
+        {
+          "word": "environmental",
+          "count": 4
+        },
+        {
+          "word": "scale",
+          "count": 4
+        },
+        {
+          "word": "pipeline",
+          "count": 4
+        },
+        {
+          "word": "learning",
+          "count": 3
+        },
+        {
+          "word": "detecting",
+          "count": 3
+        },
+        {
+          "word": "sentinel",
+          "count": 3
+        },
+        {
+          "word": "multispectral",
+          "count": 3
+        },
+        {
+          "word": "mapping",
+          "count": 3
+        },
+        {
+          "word": "policy",
+          "count": 3
+        },
+        {
+          "word": "work",
+          "count": 3
+        },
+        {
+          "word": "impact",
+          "count": 3
+        },
+        {
+          "word": "time",
+          "count": 3
+        },
+        {
+          "word": "based",
+          "count": 3
+        },
+        {
+          "word": "application",
+          "count": 3
+        },
+        {
+          "word": "model",
+          "count": 2
+        },
+        {
+          "word": "accuracy",
+          "count": 2
+        }
+      ]
+    }
+  }
+}

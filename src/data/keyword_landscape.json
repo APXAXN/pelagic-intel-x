@@ -1,0 +1,585 @@
+{
+  "source": "serpapi",
+  "query_count": 10,
+  "queries": [
+    {
+      "query": "ocean plastic pollution",
+      "organic_results": [
+        {
+          "title": "Ocean Plastic Pollution Explained",
+          "link": "https://theoceancleanup.com/ocean-plastic-pollution-explained/",
+          "snippet": "Plastic leaks into the ocean from thousands of sources all over the world every day. Increasing consumption combined with improper waste management in many ...",
+          "position": 1
+        },
+        {
+          "title": "Ocean Plastics Pollution",
+          "link": "https://www.biologicaldiversity.org/campaigns/ocean_plastics/",
+          "snippet": "Plastic is expected to outweigh all the fish in the sea by 2050. Plastics pollution has a direct and deadly effect on wildlife.",
+          "position": 2
+        },
+        {
+          "title": "Plastic pollution | The challenge",
+          "link": "https://www.montereybayaquarium.org/act-for-the-ocean/plastic-pollution/the-challenge",
+          "snippet": "Ocean plastic pollution is a big problem. Millions of tons of plastic litter our coastlines and ocean \u2014 harming wildlife and ecosystems around the world.",
+          "position": 3
+        },
+        {
+          "title": "A Guide to Plastic in the Ocean",
+          "link": "https://oceanservice.noaa.gov/hazards/marinedebris/plastics-in-the-ocean.html",
+          "snippet": "Plastics are the most common form of marine debris. They can come from a variety of land and ocean-based sources; enter the water in many ways; and impact the ...",
+          "position": 4
+        },
+        {
+          "title": "7 Solutions to Ocean Plastic Pollution",
+          "link": "https://www.oceanicsociety.org/resources/7-ways-to-reduce-ocean-plastic-pollution-today/",
+          "snippet": "This article covers some of the basic facts about ocean plastic pollution and provides several specific plastic pollution solutions that everyone can take part ...",
+          "position": 5
+        }
+      ],
+      "related_questions": [
+        {
+          "question": "Where does 90% of ocean plastic pollution come from?",
+          "snippet": "Plastic waste on land often finds its way to the sea through rivers and other waterways. Notably, only ten rivers, mainly located in Asia and Africa, are responsible for up to 90% of the plastic ending up in the oceans."
+        },
+        {
+          "question": "How is plastic pollution in the ocean caused?",
+          "snippet": "Household combustion devices, motor vehicles, industrial facilities and forest fires are common sources of air pollution. Pollutants of major public health concern include particulate matter, carbon monoxide, ozone, nitrogen dioxide and sulfur dioxide."
+        },
+        {
+          "question": "What is \ud83d\udca6 pollution?",
+          "snippet": "The World Health Organisation (WHO) says that polluted water is water whose composition has been changed to the extent that it is unusable."
+        },
+        {
+          "question": "Is anyone cleaning up Garbage Island?",
+          "snippet": "Our Ocean System. The Ocean Cleanup is currently cleaning up the Great Pacific Garbage Patch with System 03."
+        }
+      ],
+      "related_searches": [
+        "Ocean plastic pollution facts",
+        "Ocean plastic pollution solutions",
+        "Ocean plastic pollution by country",
+        "Ocean plastic pollution causes",
+        "Ocean plastic pollution poster",
+        "Ocean pollution",
+        "Ocean Plastic Pollution Drawing",
+        "10 facts about plastic pollution in the ocean"
+      ]
+    },
+    {
+      "query": "microplastics in ocean",
+      "organic_results": [
+        {
+          "title": "Marine Microplastics",
+          "link": "https://www.whoi.edu/ocean-learning-hub/ocean-topics/ocean-human-lives/pollution/marine-microplastics/",
+          "snippet": "Scientists believe microplastics are present in oceans around the world, but unlike larger plastics which can be seen unaided, microplastics are harder to find.",
+          "position": 1
+        },
+        {
+          "title": "How Microplastics are Changing the Oceans",
+          "link": "https://www.plasticpollutioncoalition.org/blog/2025/6/26/how-microplastics-are-changing-the-oceans",
+          "snippet": "Microplastics are polluting every layer of the ocean with toxic chemicals, harming marine life, and disrupting critical ecological ...",
+          "position": 2
+        },
+        {
+          "title": "Researchers discover microplastics at all ocean depths",
+          "link": "https://www.nsf.gov/news/researchers-discover-microplastics-all-ocean-depths",
+          "snippet": "Microplastics can disrupt marine food chains, causing health declines and potential drops in populations for fish and other marine creatures. \" ...",
+          "position": 3
+        },
+        {
+          "title": "What are microplastics?",
+          "link": "https://oceanservice.noaa.gov/facts/microplastics.html",
+          "snippet": "Microplastics are small plastic pieces less than five millimeters long which can be harmful to our ocean and aquatic life.",
+          "position": 4
+        },
+        {
+          "title": "The distribution of subsurface microplastics in the ocean",
+          "link": "https://www.nature.com/articles/s41586-025-08818-1",
+          "snippet": "We find that the abundances of microplastics range from 10 \u22124 to 10 4 particles per cubic metre. Microplastic size affects their distribution.",
+          "position": 5
+        }
+      ],
+      "related_questions": [
+        {
+          "question": "Does all ocean water have microplastics?",
+          "snippet": "Microplastics are found throughout the ocean, from tropical waters to polar ice, fresh water, and the air we breathe. They have even been found in tap and bottled water, sea salt, and other products we eat or drink."
+        },
+        {
+          "question": "Are Ziploc bags full of microplastics?",
+          "snippet": ""
+        },
+        {
+          "question": "Should I stop eating fish due to microplastics?",
+          "snippet": "Given that most fish species are eviscerated before human consumption, direct human exposure to microplastics would be negligible [14]. However, evisceration does not necessarily eliminate the risk of human intake of microplastics."
+        },
+        {
+          "question": "Can you flush microplastics out of your body?",
+          "snippet": ""
+        }
+      ],
+      "related_searches": [
+        "Microplastics in humans",
+        "Microplastics in the ocean effects",
+        "Microplastics in ocean facts",
+        "What are microplastics",
+        "Microplastics effects on humans",
+        "Microplastic pollution",
+        "Microplastics in ocean dataset",
+        "Types of microplastics"
+      ]
+    },
+    {
+      "query": "AI ocean monitoring",
+      "organic_results": [
+        {
+          "title": "An AI Breakthrough in Ocean Monitoring: Satellite Imagery ...",
+          "link": "https://globalfishingwatch.org/article/ai-breakthrough-ocean-monitoring-satellite-imagery-unprecedented-view-global-vessel-activity/",
+          "snippet": "Satellite imagery and AI provide 30 percent more global coverage for detecting human activity at sea.",
+          "position": 1
+        },
+        {
+          "title": "Unlocking the power of AI for ocean exploration",
+          "link": "https://annualreport.mbari.org/2022/story/unlocking-the-power-of-ai-for-ocean-exploration",
+          "snippet": "Using artificial intelligence and machine learning will alleviate the bottleneck for analyzing underwater imagery and accelerate important research around ...",
+          "position": 2
+        },
+        {
+          "title": "Artificial Intelligence for ocean monitoring and modelling",
+          "link": "https://www.sciencedirect.com/special-issue/10FCZL672Q7",
+          "snippet": "This special issue aims to showcase recent advancements in artificial intelligence (AI) techniques for ocean monitoring and modelling.",
+          "position": 3
+        },
+        {
+          "title": "Sea Change: The Rise of AI in Ocean Observing and ...",
+          "link": "https://www.usni.org/magazines/proceedings/2025/march/sea-change-rise-ai-ocean-observing-and-forecasting",
+          "snippet": "AI is enabling oceanographers and meteorologists to analyze large, complex datasets, identify data content and patterns, and make predictions with ...",
+          "position": 4
+        },
+        {
+          "title": "IBM and partners open-source a new AI model for ...",
+          "link": "https://research.ibm.com/blog/oceans-AI-model",
+          "snippet": "Granite-Geospatial-Ocean can be used to monitor the health of marine ecosystems and the oceans' uptake of carbon.",
+          "position": 5
+        }
+      ],
+      "related_questions": [],
+      "related_searches": [
+        "AI for Oceans",
+        "AI for Oceans Code",
+        "Ocean Vision AI",
+        "Oceanviews AI",
+        "Does ocsn use ai",
+        "Deep sea AI",
+        "Vessel Monitoring system online",
+        "NASA worldview"
+      ]
+    },
+    {
+      "query": "satellite plastic detection",
+      "organic_results": [
+        {
+          "title": "Satellites are detecting plastic pollution in the ocean ...",
+          "link": "https://www.polytechnique-insights.com/en/columns/planet/plastic-pollution-in-the-oceans-detected-worldwide-thanks-to-satellites/",
+          "snippet": "Scientists use three techniques to quantify plastic debris and its movements: numerical models, in situ measurements and satellite monitoring.",
+          "position": 1
+        },
+        {
+          "title": "Plastic debris detection along coastal waters using ...",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0025326X2401083X",
+          "snippet": "This study investigates the use of European Space Agency (ESA) Sentinel-2 satellite data to find and track floating macro-plastics in Brazil's coastal waterways ...",
+          "position": 2
+        },
+        {
+          "title": "ESA - Innovations in detecting plastic marine litter from space",
+          "link": "https://www.esa.int/Enabling_Support/Preparing_for_the_Future/Discovery_and_Preparation/Innovations_in_detecting_plastic_marine_litter_from_space",
+          "snippet": "The Discovery Element of the ESA's Basic Activities funded 25 innovative projects to detect and track seaborne plastic litter using satellites.",
+          "position": 3
+        },
+        {
+          "title": "Tracking Ocean Plastic From Space",
+          "link": "https://www.earthdata.nasa.gov/news/feature-articles/tracking-ocean-plastic-from-space",
+          "snippet": "A new method developed by researchers at the University of Michigan (UM) maps the concentration of ocean microplastics across the world using satellite data.",
+          "position": 4
+        },
+        {
+          "title": "Detecting ocean plastic pollution with remote sensing ...",
+          "link": "https://www.deltares.nl/en/news/detecting-plastic-pollution-remote-sensing",
+          "snippet": "Satellites can carry both microwave and optical sensors to detect plastic. Microwave sensors are particularly useful because they can see ...",
+          "position": 5
+        }
+      ],
+      "related_questions": [],
+      "related_searches": [
+        "Satellite plastic detection map",
+        "Satellite plastic detection pdf",
+        "Satellite plastic detection 2022",
+        "Plastic tracking strip",
+        "Ocean plastic detection",
+        "Satellite images of plastic in the ocean",
+        "The ocean cleanup Plastic Tracker",
+        "Great Pacific Garbage Patch satellite image"
+      ]
+    },
+    {
+      "query": "ocean plastic map",
+      "organic_results": [
+        {
+          "title": "Plastic Tracker",
+          "link": "https://theoceancleanup.com/plastic-tracker/",
+          "snippet": "This map illustrates the fate of floating plastic 20 years from now. Simply add a location of choice and see the journey unfold.",
+          "position": 1
+        },
+        {
+          "title": "Ocean Plastic Map",
+          "link": "https://www.openoceans.org/trash-map",
+          "snippet": "Map of beaches and coastal areas degraded by plastic trash.",
+          "position": 2
+        },
+        {
+          "title": "Tracking Ocean Plastic From Space",
+          "link": "https://www.earthdata.nasa.gov/news/feature-articles/tracking-ocean-plastic-from-space",
+          "snippet": "A new method developed by researchers at the University of Michigan (UM) maps the concentration of ocean microplastics across the world using satellite data.",
+          "position": 3
+        },
+        {
+          "title": "Global map shows where ocean plastics pose greatest ...",
+          "link": "https://news.tulane.edu/pr/global-map-shows-where-ocean-plastics-pose-greatest-threats",
+          "snippet": "Instead, it maps worldwide \u201cecological risk hotspots\u201d by evaluating four major pathways of harm for marine life: ingestion, entanglement, ...",
+          "position": 4
+        },
+        {
+          "title": "Garbage Patches - Marine Debris Program - NOAA",
+          "link": "https://marinedebris.noaa.gov/discover-marine-debris/garbage-patches",
+          "snippet": "Garbage patches are large areas of the ocean where litter, fishing gear, and other debris - known as marine debris - collects.",
+          "position": 5
+        }
+      ],
+      "related_questions": [
+        {
+          "question": "Where does 90% of ocean plastic pollution come from?",
+          "snippet": "Plastic waste on land often finds its way to the sea through rivers and other waterways. Notably, only ten rivers, mainly located in Asia and Africa, are responsible for up to 90% of the plastic ending up in the oceans."
+        },
+        {
+          "question": "Where has all the plastic gone in the ocean?",
+          "snippet": ""
+        },
+        {
+          "question": "Where do 79% of all plastic products end up?",
+          "snippet": "As a result, most of the world's plastic waste \u2013 a staggering 79 percent \u2013 has accumulated in landfills or nature. About 12 percent has been incinerated. Less than 10 percent has been recycled."
+        },
+        {
+          "question": "What is the #1 source of microplastics?",
+          "snippet": "Sources can vary widely, but major contributors include synthetic clothing, car tires, city dust, road markings, and marine coatings. Another source of microplastics comes from manufactured microbeads. Microbeads are commonly used in personal care products due to their abrasive and exfoliating properties."
+        }
+      ],
+      "related_searches": [
+        "Ocean pollution map",
+        "The ocean cleanup Plastic Tracker",
+        "Ocean pollution density map",
+        "Most plastic polluted river in the world",
+        "Open oceans ocean plastic map",
+        "Ocean plastic map california",
+        "River plastic emissions to the world's oceans",
+        "Ocean Cleanup map"
+      ]
+    },
+    {
+      "query": "microplastic density Pacific",
+      "organic_results": [
+        {
+          "title": "Abundance doubles in 11 years and a ten-fold increase is ...",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0025326X25009129",
+          "snippet": "A forecast model of the time-series data predicted that microplastics will be 3.2, 5.1 and 9.7 times more abundant in 2030, 2050 and 2100, respectively, ...",
+          "position": 1
+        },
+        {
+          "title": "Vertical Distribution of (Micro)plastic Particles in the North ...",
+          "link": "https://pubs.acs.org/doi/10.1021/acs.est.5c11358",
+          "snippet": "Our results demonstrate that microplastics are ubiquitously distributed vertically throughout the study sites in the North Pacific Ocean. The ...",
+          "position": 2
+        },
+        {
+          "title": "The distribution of subsurface microplastics in the ocean",
+          "link": "https://www.nature.com/articles/s41586-025-08818-1",
+          "snippet": "We find that the abundances of microplastics range from 10 \u22124 to 10 4 particles per cubic metre. Microplastic size affects their distribution.",
+          "position": 3
+        },
+        {
+          "title": "Pelagic microplastics in the North Pacific Subtropical Gyre",
+          "link": "https://academic.oup.com/pnasnexus/article/2/3/pgad070/7073714",
+          "snippet": "Here we show that MP prevail throughout the water column of the eastern North Pacific Subtropical Gyre, comprising 334 #/m3 (84.5% of plastic particles <100 \u00b5m) ...",
+          "position": 4
+        },
+        {
+          "title": "Hotspots of Floating Plastic Particles across the North Pacific ...",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10919090/",
+          "snippet": "Having polymer densities lower than seawater (0.87\u20130.97 and 0.90\u20130.92 g/cm3, respectively), these polymers are expected to be present at the ocean surface.",
+          "position": 5
+        }
+      ],
+      "related_questions": [],
+      "related_searches": [
+        "Microplastic density pacific pdf",
+        "Microplastic density pacific map",
+        "Microplastic density pacific graph",
+        "Microplastic density pacific 2022",
+        "Microplastic density pacific 2020",
+        "Microplastics in ocean statistics",
+        "Microplastics in the ocean article",
+        "Microplastics in the ocean effects"
+      ]
+    },
+    {
+      "query": "plastic pollution data",
+      "organic_results": [
+        {
+          "title": "Plastic Pollution",
+          "link": "https://ourworldindata.org/plastic-pollution",
+          "snippet": "Globally, around 3.2 million tonnes of plastic waste were traded between countries in 2024. For context, the world generated around 350 million ...",
+          "position": 1
+        },
+        {
+          "title": "Plastic Pollution",
+          "link": "https://www.unep.org/plastic-pollution",
+          "snippet": "Every year 19-23 million tonnes of plastic waste leaks into aquatic ecosystems, polluting lakes, rivers and seas. Plastic pollution can alter ...",
+          "position": 2
+        },
+        {
+          "title": "Plastics: Material-Specific Data | US EPA",
+          "link": "https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/plastics-material-specific-data",
+          "snippet": "In 2018, plastics generation was 35.7 million tons in the United States, which was 12.2 percent of MSW generation.",
+          "position": 3
+        },
+        {
+          "title": "Plastic pollution: facts & figures",
+          "link": "https://www.sas.org.uk/plastic-pollution/plastic-pollution-facts-figures/",
+          "snippet": "Over 11 million tonnes of plastic finds its way into the ocean every single year. 9.5 million tonnes of this enters the ocean from the land, and 1.75 tonnes are ...",
+          "position": 4
+        },
+        {
+          "title": "Statistics on plastic pollution",
+          "link": "https://www.montereybayaquarium.org/newsroom/media-kits/sej-2024/stopping-plastic-pollution/statistics-on-plastic-pollution",
+          "snippet": "Plastic leakage to the environment is projected to double from 24 million tons (Mt) in 2019, to nearly 50 Mt a year by 2060 (Source).",
+          "position": 5
+        }
+      ],
+      "related_questions": [
+        {
+          "question": "What is the current data for plastic pollution?",
+          "snippet": "The world produces around 350 million tonnes of plastic waste each year. Estimates vary, but recent high-quality studies suggest that between 1 and 2 million tonnes of plastic enter the oceans annually. That means about 0.5% of plastic waste ends up in the ocean."
+        },
+        {
+          "question": "Are 0.5% of our brain plastic?",
+          "snippet": "Researchers who examined brain samples from autopsies found plastic in human brains at a concentration of 4,800 micrograms per gram. That's a small amount. In total, the results of this preprint study indicate that, by weight, our brains may be 99.5% brain and 0.5% plastic."
+        },
+        {
+          "question": "What is \ud83d\udca6 pollution?",
+          "snippet": "The World Health Organisation (WHO) says that polluted water is water whose composition has been changed to the extent that it is unusable."
+        },
+        {
+          "question": "Is number 2, 4, or 5 plastic safe?",
+          "snippet": "Plastics No. 1, 2, 4, and 5 have no known health issues, according to Sea Studios Foundation. In fact, these are the only plastic containers considered generally safe for food storage. But you should still try to avoid the frequent use of plastic around food."
+        }
+      ],
+      "related_searches": [
+        "Plastic pollution data 2022",
+        "Percentage of plastic waste in the world",
+        "Plastic pollution data 2021",
+        "Plastic pollution on land",
+        "Plastic pollution solutions",
+        "Plastic pollution facts",
+        "Plastic pollution in the ocean",
+        "Plastic pollution graph"
+      ]
+    },
+    {
+      "query": "ocean cleanup technology",
+      "organic_results": [
+        {
+          "title": "The Ocean Cleanup",
+          "link": "https://theoceancleanup.com/",
+          "snippet": "The Ocean Cleanup is developing and scaling technologies to rid the oceans of plastic. We aim to remove 90% by 2040.",
+          "position": 1
+        },
+        {
+          "title": "The Ocean Cleanup",
+          "link": "https://en.wikipedia.org/wiki/The_Ocean_Cleanup",
+          "snippet": "The ocean system is deployed in oceanic gyres to collect marine debris. The project aims to launch 10 or more approximately 2 km-long (1.2 mi) systems which ...",
+          "position": 2
+        },
+        {
+          "title": "Ocean plastic: How tech is being used to clean up waste ...",
+          "link": "https://www.bbc.com/news/technology-64744926",
+          "snippet": "The Ocean Cleanup uses a long, u-shaped barrier, similar to a net, that is pulled through patches of rubbish by boats. It moves slowly to try to ...",
+          "position": 3
+        },
+        {
+          "title": "High Tech Clean-Ups: No Solution to Ocean Plastic Pollution",
+          "link": "https://www.oceancare.org/en/stories_and_news/high-tech-clean-up/",
+          "snippet": "A review of clean-up devices from 2020 identified 38 different technologies, many of which are actively collecting plastic in the oceans.",
+          "position": 4
+        },
+        {
+          "title": "Never Too Late: 5 Brilliant Technologies That Clean the ...",
+          "link": "https://www.divessi.com/en/blog/clean-the-ocean-innovative-technologies-2231",
+          "snippet": "The Interceptor, another brilliant innovation from The Ocean Cleanup, is a fully automated, solar-powered system designed to capture plastic from rivers before ...",
+          "position": 5
+        }
+      ],
+      "related_questions": [
+        {
+          "question": "Has The Ocean Cleanup been successful?",
+          "snippet": ""
+        },
+        {
+          "question": "Is there a machine that cleans the ocean?",
+          "snippet": ""
+        },
+        {
+          "question": "Where does The Ocean Cleanup get its money?",
+          "snippet": ""
+        },
+        {
+          "question": "How does ocean cleanup technology work?",
+          "snippet": "It. Here is how the system catches plastic. The system takes advantage of three natural oceanic forces winds waves and currents both the plastic."
+        }
+      ],
+      "related_searches": [
+        "The Ocean Cleanup",
+        "Ocean Cleanup jobs salary",
+        "Ocean Cleanup organizations",
+        "Ocean Cleanup Interceptor",
+        "What does the Ocean Cleanup do with the plastic",
+        "How much plastic has the Ocean Cleanup collected",
+        "How does The Ocean Cleanup work",
+        "Ocean Cleanup logo"
+      ]
+    },
+    {
+      "query": "AI environmental monitoring",
+      "organic_results": [
+        {
+          "title": "Artificial intelligence in environmental monitoring",
+          "link": "https://www.sciencedirect.com/science/article/pii/S2773049224000278",
+          "snippet": "This article provides an overview of the value of environmental monitoring, the challenges of conventional methods, and potential AI-based solutions.",
+          "position": 1
+        },
+        {
+          "title": "AI for Environmental Monitoring: Benefits, Uses & Innovation",
+          "link": "https://www.sandtech.com/insight/ai-for-environmental-monitoring/",
+          "snippet": "AI-powered systems can monitor everything from air quality to seismic activity, allowing scientists to detect shifts immediately and take action ...",
+          "position": 2
+        },
+        {
+          "title": "AI is Transforming Environmental Monitoring and ...",
+          "link": "https://makersite.io/how-ai-is-transforming-environmental-monitoring-and-conservation/",
+          "snippet": "By analyzing historical data and current conditions, AI models can forecast air and water quality, allowing authorities to take preventive measures. For example ...",
+          "position": 3
+        },
+        {
+          "title": "How artificial intelligence is helping tackle environmental ...",
+          "link": "https://www.unep.org/news-and-stories/story/how-artificial-intelligence-helping-tackle-environmental-challenges",
+          "snippet": "AI can play a role in tackling environmental challenges, from designing more energy-efficient buildings to monitoring deforestation to optimizing renewable ...",
+          "position": 4
+        },
+        {
+          "title": "Advancing Environmental Monitoring through AI",
+          "link": "https://www.intechopen.com/chapters/89771",
+          "snippet": "AI enhances environmental monitoring by improving prediction accuracy for events like wildfires, floods, and droughts. It aids in detecting endangered species ...",
+          "position": 5
+        }
+      ],
+      "related_questions": [
+        {
+          "question": "What are the four types of environmental monitoring?",
+          "snippet": ""
+        },
+        {
+          "question": "How damaging is ChatGPT to the environment?",
+          "snippet": ""
+        },
+        {
+          "question": "Is ChatGPT worse for the environment than flying?",
+          "snippet": "Anyone with concerns about the environmental impact of flying commercial should probably be aware of how much carbon is produced by using AI tools like ChatGPT: Each month, the AI chatbot produces more than 260,930 kilograms of CO2\u2014equal to the carbon emissions of 260 flights from New York City to London."
+        },
+        {
+          "question": "Are AI or cows worse for the environment?",
+          "snippet": "While AI's water use is on a concerning upward trajectory, it is minuscule compared to the trillions of litres used daily by animal agriculture."
+        }
+      ],
+      "related_searches": [
+        "Artificial intelligence in environmental monitoring advancements, challenges and future directions",
+        "Ai environmental monitoring 2022",
+        "Ai environmental monitoring framework",
+        "Ai environmental monitoring examples",
+        "Artificial intelligence in environmental science",
+        "How does AI affect the environment negatively",
+        "Artificial intelligence in environmental monitoring in-depth analysis",
+        "AI environmental impact statistics"
+      ]
+    },
+    {
+      "query": "global plastics treaty",
+      "organic_results": [
+        {
+          "title": "Intergovernmental Negotiating Committee on Plastic ...",
+          "link": "https://www.unep.org/inc-plastic-pollution",
+          "snippet": "Press Release: New Chair elected to lead negotiations on global plastic pollution treaty (7 February 2026). ENB logo. Coverage of INC-5.3 from IISD: Earth ...",
+          "position": 1
+        },
+        {
+          "title": "UN Plastics Treaty",
+          "link": "https://www.globalplasticlaws.org/un-global-plastics-treaty",
+          "snippet": "175 nations agreed on a mandate to create a first-of-its-kind international legally binding instrument to end plastic pollution.",
+          "position": 2
+        },
+        {
+          "title": "Plastics Treaty | Break Free From Plastic",
+          "link": "https://www.breakfreefromplastic.org/plastics-treaty/",
+          "snippet": "The Global Plastics Treaty is a once-in-a-lifetime opportunity to address plastic pollution comprehensively.",
+          "position": 3
+        },
+        {
+          "title": "Global Plastics Treaty | Home",
+          "link": "https://www.globalplastictreaty.com/",
+          "snippet": "The Global Plastics Treaty is a once in a lifetime opportunity to create universal protection against health harms caused by chemicals found in plastic.",
+          "position": 4
+        },
+        {
+          "title": "Global Treaty to End Plastic Pollution",
+          "link": "https://www.worldwildlife.org/our-work/sustainability/plastics/global-plastics-treaty/",
+          "snippet": "Learn about the global plastics treaty to reduce pollution, promote sustainable production, and protect oceans and wildlife.",
+          "position": 5
+        }
+      ],
+      "related_questions": [
+        {
+          "question": "Why did Global Plastic Treaty Talks collapse?",
+          "snippet": "No Agreement to Reduce Plastic Production at Geneva Talks Understandably, the High Ambition Coalition opposed it, but so did petrostates, which suggested it had taken other countries' views more into account. As a result, delegates failed to agree on either text to serve as the basis for their negotiations."
+        },
+        {
+          "question": "What is the status of the Global Plastic Treaty?",
+          "snippet": "Support for ending plastic pollution In a historic move, 175 nations voted to adopt a global treaty for plastic pollution\u2014agreeing on an accelerated timeline so that the treaty could be implemented as soon as 2025."
+        },
+        {
+          "question": "What is the goal of the Global Plastics Treaty?",
+          "snippet": "The Global Plastics Treaty must cut total plastic production by at least 75% by 2040 to ensure that we are staying below 1.5\u00b0 C for our climate and to protect our health, our rights, our communities and our environment."
+        },
+        {
+          "question": "Which country is the world's largest plastic polluter?",
+          "snippet": ""
+        }
+      ],
+      "related_searches": [
+        "Global Plastics treaty negotiations 2025",
+        "Global plastics treaty 2022",
+        "Global plastics treaty 2026",
+        "Global plastic treaty PDF",
+        "Global plastics treaty greenpeace",
+        "Global plastics treaty wikipedia",
+        "Global plastics treaty countries",
+        "Business Coalition for a Global plastics treaty"
+      ]
+    }
+  ]
+}

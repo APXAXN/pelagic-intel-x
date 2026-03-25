@@ -1,0 +1,41 @@
+{
+  "scientific_terms_found": 4,
+  "public_terms_found": 4,
+  "scientific_term_counts": [
+    {
+      "term": "density mapping",
+      "count": 3
+    },
+    {
+      "term": "microplastic concentration",
+      "count": 3
+    },
+    {
+      "term": "bioaccumulation",
+      "count": 2
+    },
+    {
+      "term": "polymer type",
+      "count": 1
+    }
+  ],
+  "public_term_counts": [
+    {
+      "term": "cleanup",
+      "count": 13
+    },
+    {
+      "term": "plastic pollution",
+      "count": 5
+    },
+    {
+      "term": "garbage patch",
+      "count": 1
+    },
+    {
+      "term": "where is the plastic",
+      "count": 1
+    }
+  ],
+  "gap_insight": "Scientific discourse favors precise measurement language (density, distribution, concentration) while public conversation uses spatial and emotional framing (where is it, how bad, can we see it). The campaign must bridge this gap \u2014 offering visual answers to public questions while maintaining scientific credibility."
+}
