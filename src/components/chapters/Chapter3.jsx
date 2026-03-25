@@ -162,8 +162,8 @@ export function Chapter3() {
       </RevealOnScroll>
 
       <RevealOnScroll className="mb-12 max-w-3xl">
-        <h3 className="font-display text-2xl md:text-3xl text-text-primary mb-4 leading-snug">
-          Every map before this one was looking at the surface.
+        <h3 className="font-display text-2xl md:text-3xl text-text-primary mb-4 italic font-light" style={{ letterSpacing: '-0.02em', lineHeight: 1.06 }}>
+          Every map before this one was looking at the <span className="font-bold not-italic text-cyan">surface.</span>
         </h3>
         <p className="text-text-secondary leading-relaxed">
           Pelagic IntelX's satellite-AI pipeline doesn't stop at the waterline.
