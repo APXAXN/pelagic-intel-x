@@ -147,6 +147,7 @@ function FramePerformanceBars() {
             tickLine={false}
           />
           <Tooltip
+            cursor={false}
             contentStyle={{
               background: '#0D2B35',
               border: '1px solid #1a4050',
