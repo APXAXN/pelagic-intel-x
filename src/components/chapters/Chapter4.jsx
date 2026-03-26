@@ -241,7 +241,7 @@ export function Chapter4() {
       id="the-impact-play"
       label="Chapter 4"
       title="The Impact Play"
-      subtitle={'"Plastic Doesn\'t Disappear — the policy campaign"'}
+      subtitle={'"Plastics live longer than you — the policy campaign"'}
     >
       <RevealOnScroll className="mb-16 max-w-3xl">
         <p className="text-text-secondary leading-relaxed">
