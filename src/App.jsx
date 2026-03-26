@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react'
 import { ScrollContainer } from '@/components/layout/ScrollContainer'
 import { Hero } from '@/components/chapters/Hero'
+import { ExecutiveSummary } from '@/components/chapters/ExecutiveSummary'
 import { Footer } from '@/components/chapters/Footer'
 import { AccessibilityProvider } from '@/contexts/AccessibilityContext'
 import { AccessibilityToggle } from '@/components/ui/AccessibilityToggle'
@@ -22,6 +23,7 @@ function App() {
       <AccessibilityToggle />
       <ScrollContainer>
         <Hero />
+        <ExecutiveSummary />
         <Suspense fallback={<ChapterFallback />}>
           <Chapter1 />
         </Suspense>
