@@ -208,3 +208,146 @@ html[data-theme="high-contrast"] .font-mono {
 html[data-theme="high-contrast"] .font-mono.text-cyan {
   color: #ff6fa0 !important;
 }
+
+/* ── Inline style overrides (audience cards, social mockups, etc.) ── */
+
+/* Override ALL inline borderColor styles to #444 */
+html[data-theme="high-contrast"] div[style*="borderColor"],
+html[data-theme="high-contrast"] div[style*="border-color"],
+html[data-theme="high-contrast"] div[style*="borderLeftColor"],
+html[data-theme="high-contrast"] div[style*="borderTopColor"] {
+  border-color: #444 !important;
+}
+
+/* Override inline color styles on audience/stakeholder labels */
+html[data-theme="high-contrast"] div[style*="color"] h3,
+html[data-theme="high-contrast"] div[style*="color"] span {
+  color: #ccc !important;
+}
+
+/* Audience card language pill overrides */
+html[data-theme="high-contrast"] span[style*="borderColor"] {
+  border-color: #555 !important;
+  background-color: #1a1a1a !important;
+  color: #ccc !important;
+}
+
+/* SVG stakeholder map — force monochrome */
+html[data-theme="high-contrast"] svg circle[fill] {
+  fill: #888 !important;
+  opacity: 0.6 !important;
+}
+
+html[data-theme="high-contrast"] svg circle[opacity="0.8"] {
+  fill: #fff !important;
+  opacity: 1 !important;
+}
+
+html[data-theme="high-contrast"] svg line[stroke] {
+  stroke: #555 !important;
+}
+
+html[data-theme="high-contrast"] svg text[fill] {
+  fill: #ccc !important;
+}
+
+/* Key Insight callout — boost border visibility */
+html[data-theme="high-contrast"] .border-l-2 {
+  border-left-color: #fff !important;
+}
+
+html[data-theme="high-contrast"] .border-l-2 .text-gold {
+  color: #ccc !important;
+}
+
+/* Social mockup LinkedIn badge */
+html[data-theme="high-contrast"] div[class*="bg-[#0A66C2]"] {
+  background-color: #333 !important;
+  color: #ccc !important;
+}
+
+/* Recharts legend text */
+html[data-theme="high-contrast"] .recharts-legend-item-text {
+  color: #ccc !important;
+}
+
+/* Recharts lines — boost contrast on dark bg */
+html[data-theme="high-contrast"] .recharts-line path {
+  stroke-width: 2.5 !important;
+}
+
+/* Download panel items — force bg */
+html[data-theme="high-contrast"] .download-panel div,
+html[data-theme="high-contrast"] [class*="DownloadPanel"] div {
+  border-color: #444 !important;
+}
+
+/* Footer — remove teal gradient artifacts */
+html[data-theme="high-contrast"] footer {
+  background-color: #000 !important;
+  border-color: #444 !important;
+}
+
+html[data-theme="high-contrast"] footer a {
+  color: #ccc !important;
+}
+
+html[data-theme="high-contrast"] footer a:hover {
+  color: #fff !important;
+}
+
+/* Gold/teal text classes → neutral in high contrast */
+html[data-theme="high-contrast"] .text-gold {
+  color: #aaa !important;
+}
+
+/* Phase timeline dots — force white */
+html[data-theme="high-contrast"] div[style*="backgroundColor"][class*="rounded-full"] {
+  background-color: #fff !important;
+}
+
+/* Timeline phase card top borders */
+html[data-theme="high-contrast"] div[style*="borderTopColor"] {
+  border-top-color: #666 !important;
+}
+
+/* Phase week labels */
+html[data-theme="high-contrast"] span[style*="color"] {
+  color: #ccc !important;
+}
+
+/* Framing fidelity section overrides */
+html[data-theme="high-contrast"] .recharts-bar-rectangle path {
+  opacity: 0.9 !important;
+}
+
+/* Depth model control panel override */
+html[data-theme="high-contrast"] div[style*="linear-gradient(transparent"] {
+  background: linear-gradient(transparent, rgba(0,0,0,0.95)) !important;
+}
+
+/* Ensure h4 headings are white */
+html[data-theme="high-contrast"] h4 {
+  color: #fff !important;
+}
+
+/* Table rows */
+html[data-theme="high-contrast"] tr {
+  border-color: #333 !important;
+}
+
+html[data-theme="high-contrast"] tr:hover {
+  background-color: #1a1a1a !important;
+}
+
+html[data-theme="high-contrast"] td {
+  color: #ccc !important;
+}
+
+html[data-theme="high-contrast"] td.text-cyan {
+  color: #ff6fa0 !important;
+}
+
+html[data-theme="high-contrast"] th {
+  color: #999 !important;
+}
