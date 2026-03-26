@@ -52,8 +52,14 @@ function OceanScanAnimation() {
         ctx.stroke()
       }
 
-      // Scan line sweep
-      const scanX = ((Math.sin(time * 0.4) + 1) / 2) * w
+      // Scan line sweep — ping-pong across visible width
+      // Use a linear ping-pong so speed feels consistent regardless of viewport width
+      const scanSpeed = 120 // pixels per second at 60fps → ~120px/frame-set
+      const scanCycle = (2 * w) / scanSpeed // time for one full back-and-forth
+      const scanProgress = (time % scanCycle) / scanCycle
+      const scanX = scanProgress < 0.5
+        ? (scanProgress * 2) * w        // left → right
+        : (1 - (scanProgress - 0.5) * 2) * w  // right → left
       const scanGradient = ctx.createLinearGradient(scanX - 100, 0, scanX + 100, 0)
       scanGradient.addColorStop(0, 'rgba(232, 91, 138, 0)')
       scanGradient.addColorStop(0.5, 'rgba(232, 91, 138, 0.08)')

@@ -1,7 +1,36 @@
+import { useState, useEffect, useRef } from 'react'
 import { useAccessibility } from '@/contexts/AccessibilityContext'
 
 export function AccessibilityToggle() {
   const { highContrast, setHighContrast } = useAccessibility()
+  const [visible, setVisible] = useState(true)
+  const lastScrollY = useRef(0)
+  const ticking = useRef(false)
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (ticking.current) return
+      ticking.current = true
+      requestAnimationFrame(() => {
+        const y = window.scrollY
+        if (y < 100) {
+          // Always show near top
+          setVisible(true)
+        } else if (y < lastScrollY.current) {
+          // Scrolling up → show
+          setVisible(true)
+        } else if (y > lastScrollY.current + 10) {
+          // Scrolling down (with 10px deadzone) → hide
+          setVisible(false)
+        }
+        lastScrollY.current = y
+        ticking.current = false
+      })
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   return (
     <button
@@ -27,7 +56,10 @@ export function AccessibilityToggle() {
         letterSpacing: '0.08em',
         textTransform: 'uppercase',
         cursor: 'pointer',
-        transition: 'all 0.3s ease',
+        transition: 'all 0.3s ease, opacity 0.35s ease, transform 0.35s ease',
+        opacity: visible ? 1 : 0,
+        transform: visible ? 'translateY(0)' : 'translateY(-20px)',
+        pointerEvents: visible ? 'auto' : 'none',
       }}
     >
       <svg
@@ -56,7 +88,7 @@ export function AccessibilityToggle() {
           <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z" />
         )}
       </svg>
-      {highContrast ? 'Branded' : 'A11y'}
+      {highContrast ? 'Branded' : 'AccMode'}
     </button>
   )
 }
