@@ -2,6 +2,8 @@ import { lazy, Suspense } from 'react'
 import { ScrollContainer } from '@/components/layout/ScrollContainer'
 import { Hero } from '@/components/chapters/Hero'
 import { Footer } from '@/components/chapters/Footer'
+import { AccessibilityProvider } from '@/contexts/AccessibilityContext'
+import { AccessibilityToggle } from '@/components/ui/AccessibilityToggle'
 
 // Lazy-load heavy chapters to keep initial bundle lean
 const Chapter1 = lazy(() => import('@/components/chapters/Chapter1').then(m => ({ default: m.Chapter1 })))
@@ -16,25 +18,28 @@ function ChapterFallback() {
 
 function App() {
   return (
-    <ScrollContainer>
-      <Hero />
-      <Suspense fallback={<ChapterFallback />}>
-        <Chapter1 />
-      </Suspense>
-      <Suspense fallback={<ChapterFallback />}>
-        <Chapter2 />
-      </Suspense>
-      <Suspense fallback={<ChapterFallback />}>
-        <Chapter3 />
-      </Suspense>
-      <Suspense fallback={<ChapterFallback />}>
-        <Chapter4 />
-      </Suspense>
-      <Suspense fallback={<ChapterFallback />}>
-        <Chapter5 />
-      </Suspense>
-      <Footer />
-    </ScrollContainer>
+    <AccessibilityProvider>
+      <AccessibilityToggle />
+      <ScrollContainer>
+        <Hero />
+        <Suspense fallback={<ChapterFallback />}>
+          <Chapter1 />
+        </Suspense>
+        <Suspense fallback={<ChapterFallback />}>
+          <Chapter2 />
+        </Suspense>
+        <Suspense fallback={<ChapterFallback />}>
+          <Chapter3 />
+        </Suspense>
+        <Suspense fallback={<ChapterFallback />}>
+          <Chapter4 />
+        </Suspense>
+        <Suspense fallback={<ChapterFallback />}>
+          <Chapter5 />
+        </Suspense>
+        <Footer />
+      </ScrollContainer>
+    </AccessibilityProvider>
   )
 }
 

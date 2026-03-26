@@ -60,3 +60,151 @@ body {
   background-color: color-mix(in srgb, var(--color-cyan) 30%, transparent);
   color: var(--color-text-primary);
 }
+
+/* ─── High Contrast Accessibility Mode ─── */
+html[data-theme="high-contrast"] body {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/* Backgrounds */
+html[data-theme="high-contrast"] section,
+html[data-theme="high-contrast"] [class*="ocean-bg"],
+html[data-theme="high-contrast"] [class*="ocean-surface"] {
+  background-color: #000 !important;
+}
+
+html[data-theme="high-contrast"] .bg-ocean-bg {
+  background-color: #000 !important;
+}
+
+html[data-theme="high-contrast"] .bg-ocean-surface {
+  background-color: #111 !important;
+}
+
+/* Text */
+html[data-theme="high-contrast"] .text-text-primary,
+html[data-theme="high-contrast"] h1,
+html[data-theme="high-contrast"] h2,
+html[data-theme="high-contrast"] h3 {
+  color: #fff !important;
+}
+
+html[data-theme="high-contrast"] .text-text-secondary,
+html[data-theme="high-contrast"] .text-text-dim,
+html[data-theme="high-contrast"] p,
+html[data-theme="high-contrast"] span:not(.recharts-text):not([class*="cyan"]) {
+  color: #ccc !important;
+}
+
+/* Accent — keep pink visible but boost contrast */
+html[data-theme="high-contrast"] .text-cyan {
+  color: #ff6fa0 !important;
+}
+
+/* Cards and panels */
+html[data-theme="high-contrast"] [style*="background"][style*="143545"],
+html[data-theme="high-contrast"] [style*="background"][style*="0D2B35"] {
+  background-color: #111 !important;
+}
+
+/* Generic card overrides — catch inline bg styles */
+html[data-theme="high-contrast"] div[style*="backgroundColor"] {
+  background-color: #111 !important;
+  border-color: #444 !important;
+}
+
+/* Borders */
+html[data-theme="high-contrast"] [class*="border"] {
+  border-color: #444 !important;
+}
+
+/* Gradient overlays — flatten to solid black */
+html[data-theme="high-contrast"] .bg-gradient-to-t,
+html[data-theme="high-contrast"] .bg-gradient-to-b,
+html[data-theme="high-contrast"] [style*="linear-gradient"] {
+  background: #000 !important;
+}
+
+/* Hero depth gradient layer — remove in high contrast */
+html[data-theme="high-contrast"] section > div[style*="linear-gradient"] {
+  background: transparent !important;
+}
+
+/* Canvas overlays — boost opacity */
+html[data-theme="high-contrast"] canvas {
+  opacity: 1 !important;
+  filter: grayscale(1) contrast(1.5) brightness(1.2);
+}
+
+/* Recharts overrides */
+html[data-theme="high-contrast"] .recharts-cartesian-grid line {
+  stroke: #333 !important;
+}
+
+html[data-theme="high-contrast"] .recharts-text {
+  fill: #ccc !important;
+}
+
+html[data-theme="high-contrast"] .recharts-tooltip-wrapper div {
+  background-color: #111 !important;
+  border-color: #444 !important;
+  color: #fff !important;
+}
+
+/* Scrollbar */
+html[data-theme="high-contrast"]::-webkit-scrollbar-track {
+  background: #000;
+}
+
+html[data-theme="high-contrast"]::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+/* Selection */
+html[data-theme="high-contrast"] ::selection {
+  background-color: rgba(255, 111, 160, 0.4);
+  color: #fff;
+}
+
+/* StatCard overrides */
+html[data-theme="high-contrast"] [class*="StatCard"],
+html[data-theme="high-contrast"] .stat-card {
+  background-color: #111 !important;
+  border: 1px solid #444 !important;
+}
+
+/* Download panels */
+html[data-theme="high-contrast"] [class*="DownloadPanel"],
+html[data-theme="high-contrast"] .download-panel {
+  background-color: #111 !important;
+  border: 1px solid #444 !important;
+}
+
+/* Mapbox container */
+html[data-theme="high-contrast"] .mapboxgl-map {
+  filter: grayscale(0.8) contrast(1.3);
+}
+
+/* 3D depth model container */
+html[data-theme="high-contrast"] [style*="0D2B35"] canvas {
+  filter: grayscale(0.6) contrast(1.4) brightness(1.1);
+}
+
+/* Force all text inside inline-styled divs to be readable */
+html[data-theme="high-contrast"] div[style] span,
+html[data-theme="high-contrast"] div[style] p,
+html[data-theme="high-contrast"] div[style] h3,
+html[data-theme="high-contrast"] div[style] h4,
+html[data-theme="high-contrast"] div[style] label {
+  color: #ccc !important;
+}
+
+/* Ensure mono labels stay visible */
+html[data-theme="high-contrast"] .font-mono {
+  color: #aaa !important;
+}
+
+html[data-theme="high-contrast"] .font-mono.text-cyan {
+  color: #ff6fa0 !important;
+}
