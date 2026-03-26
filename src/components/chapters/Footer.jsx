@@ -41,7 +41,7 @@ export function Footer() {
         {/* Links */}
         <div className="flex justify-center gap-6">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/nathanrfitzgerald"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-xs text-text-dim hover:text-cyan transition-colors"
@@ -57,7 +57,9 @@ export function Footer() {
             GitHub
           </a>
           <a
-            href="mailto:nathan@example.com"
+            href="https://www.nathanfitzgerald.io/contact"
+            target="_blank"
+            rel="noopener noreferrer"
             className="font-mono text-xs text-text-dim hover:text-cyan transition-colors"
           >
             Contact
