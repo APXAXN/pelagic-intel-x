@@ -35,11 +35,17 @@ export function ExecutiveSummary() {
           architecture, and stakeholder framework was informed by a real analytics
           pipeline: Google Trends, SerpApi keyword mapping, Reddit NLP, simulated
           social listening, and a novel framing fidelity analysis. The work is
-          original.{' '}
-          <span className="text-cyan font-medium">
-            The methodology is documented. The company is invented; the
-            communications thinking is not.
-          </span>
+          original.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="font-display text-2xl md:text-3xl text-cyan mt-6"
+          style={{ fontWeight: 700, lineHeight: 1.2 }}
+        >
+          The methodology is documented. The company is invented; the communications thinking is not.
         </motion.p>
       </div>
     </section>
