@@ -338,9 +338,10 @@ def create_social_content_brief():
         pdf.set_font("Helvetica", "", 8.5)
         pdf.set_text_color(*TEXT)
         pdf.multi_cell(170, 4.2, text)
-        pdf.set_font("Helvetica", "I", 7)
+        pdf.set_x(20)
+        pdf.set_font("Helvetica", "I", 6.5)
         pdf.set_text_color(*TEXT_SEC)
-        pdf.cell(0, 4, f"   {meta}", new_x="LMARGIN", new_y="NEXT")
+        pdf.cell(0, 3.5, meta, new_x="LMARGIN", new_y="NEXT")
         pdf.ln(2)
 
     pdf.ln(2)
@@ -362,8 +363,6 @@ def create_social_content_brief():
 
     pdf.subsection_title("CTA:")
     pdf.body_text("Explore the map: [link] | Access the API: [link] | Read the methodology: [link]\n\nIf you work in ocean policy, environmental research, or marine conservation, I'd welcome your perspective on what this data reveals. What patterns do you see?")
-
-    pdf.add_page()
 
     # Posting schedule
     pdf.section_title("Posting Schedule: Launch Week", 12)
