@@ -216,53 +216,53 @@ def create_media_one_pager():
     )
 
     # Key stats grid
-    pdf.section_title("Key Findings", 12)
+    pdf.section_title("Key Findings", 11)
     y = pdf.get_y()
-    pdf.stat_box("Data Points Analyzed", "3,844", 10, y, 44, 24)
-    pdf.stat_box("Accumulation Zones", "16", 57, y, 44, 24)
-    pdf.stat_box("Peak Density (particles/km\u00b2)", "580,000", 104, y, 44, 24)
-    pdf.stat_box("Above Prior Predictions", "40%", 151, y, 44, 24)
-    pdf.set_y(y + 30)
+    pdf.stat_box("Data Points Analyzed", "3,844", 10, y, 44, 22)
+    pdf.stat_box("Accumulation Zones", "16", 57, y, 44, 22)
+    pdf.stat_box("Peak Density (particles/km\u00b2)", "580,000", 104, y, 44, 22)
+    pdf.stat_box("Above Prior Predictions", "40%", 151, y, 44, 22)
+    pdf.set_y(y + 26)
 
     pdf.divider()
 
     # What makes this different
-    pdf.section_title("What Makes This Different", 12)
+    pdf.section_title("What Makes This Different", 11)
 
-    pdf.set_font("Helvetica", "B", 9)
+    pdf.set_font("Helvetica", "B", 8.5)
     pdf.set_text_color(*ACCENT)
-    pdf.cell(5, 5, ">")
+    pdf.cell(5, 4.5, ">")
     pdf.set_text_color(*TEXT)
-    pdf.set_font("Helvetica", "B", 9)
-    pdf.cell(40, 5, "AI + Satellite Fusion:")
-    pdf.set_font("Helvetica", "", 9)
-    pdf.multi_cell(0, 5, "Combines multispectral satellite imagery with autonomous ocean sensor data and historical trawl records through a machine learning pipeline to produce continuous density estimates -- not isolated point samples.")
+    pdf.set_font("Helvetica", "B", 8.5)
+    pdf.cell(38, 4.5, "AI + Satellite Fusion:")
+    pdf.set_font("Helvetica", "", 8.5)
+    pdf.multi_cell(0, 4.2, "Combines multispectral satellite imagery with autonomous ocean sensor data and historical trawl records through a machine learning pipeline to produce continuous density estimates -- not isolated point samples.")
+    pdf.ln(1)
+
+    pdf.set_font("Helvetica", "B", 8.5)
+    pdf.set_text_color(*ACCENT)
+    pdf.cell(5, 4.5, ">")
+    pdf.set_text_color(*TEXT)
+    pdf.set_font("Helvetica", "B", 8.5)
+    pdf.cell(38, 4.5, "Depth-Resolved Model:")
+    pdf.set_font("Helvetica", "", 8.5)
+    pdf.multi_cell(0, 4.2, "Goes beyond surface-only estimates. The volumetric model maps plastic distribution across three depth layers (0-50m, 60-130m, 130-200m), revealing that nearly 60% of microplastic mass is invisible to conventional remote sensing.")
+    pdf.ln(1)
+
+    pdf.set_font("Helvetica", "B", 8.5)
+    pdf.set_text_color(*ACCENT)
+    pdf.cell(5, 4.5, ">")
+    pdf.set_text_color(*TEXT)
+    pdf.set_font("Helvetica", "B", 8.5)
+    pdf.cell(38, 4.5, "Policy-Ready Output:")
+    pdf.set_font("Helvetica", "", 8.5)
+    pdf.multi_cell(0, 4.2, "Data is structured for direct integration into maritime enforcement systems and treaty negotiations. Open API available. Designed for the INC-6 Global Plastics Treaty timeline.")
     pdf.ln(2)
-
-    pdf.set_font("Helvetica", "B", 9)
-    pdf.set_text_color(*ACCENT)
-    pdf.cell(5, 5, ">")
-    pdf.set_text_color(*TEXT)
-    pdf.set_font("Helvetica", "B", 9)
-    pdf.cell(40, 5, "Depth-Resolved Model:")
-    pdf.set_font("Helvetica", "", 9)
-    pdf.multi_cell(0, 5, "Goes beyond surface-only estimates. The volumetric model maps plastic distribution across three depth layers (0-50m, 60-130m, 130-200m), revealing that nearly 60% of microplastic mass is invisible to conventional remote sensing.")
-    pdf.ln(2)
-
-    pdf.set_font("Helvetica", "B", 9)
-    pdf.set_text_color(*ACCENT)
-    pdf.cell(5, 5, ">")
-    pdf.set_text_color(*TEXT)
-    pdf.set_font("Helvetica", "B", 9)
-    pdf.cell(40, 5, "Policy-Ready Output:")
-    pdf.set_font("Helvetica", "", 9)
-    pdf.multi_cell(0, 5, "Data is structured for direct integration into maritime enforcement systems and treaty negotiations. Open API available. Designed for the INC-6 Global Plastics Treaty timeline.")
-    pdf.ln(4)
 
     pdf.divider()
 
     # Embed-ready quotes
-    pdf.section_title("Embed-Ready Quotes", 12)
+    pdf.section_title("Embed-Ready Quotes", 11)
 
     pdf.quote_block(
         "You cannot regulate what you cannot see. This map gives enforcement agencies a near-real-time picture of where plastic accumulates and which upstream sources are most likely responsible.",
@@ -276,13 +276,12 @@ def create_media_one_pager():
         "Pacific Island nations have been negotiating blind. Granular spatial data like this is exactly what delegates need to push for binding source-reduction targets at INC-6.",
         "Rina Talei, Pacific Islands Forum Environment Adviser"
     )
-    pdf.ln(3)
 
     pdf.divider()
 
-    # Resources
-    pdf.section_title("Resources", 12)
-    pdf.set_font("Helvetica", "", 9)
+    # Resources & Contact combined
+    pdf.section_title("Resources", 11)
+    pdf.set_font("Helvetica", "", 8.5)
     pdf.set_text_color(*TEXT)
     items = [
         ("Interactive Map:", "map.pelagicintelx.com"),
@@ -291,17 +290,19 @@ def create_media_one_pager():
         ("Press Kit & Assets:", "press.pelagicintelx.com"),
     ]
     for label, url in items:
-        pdf.set_font("Helvetica", "B", 9)
+        pdf.set_font("Helvetica", "B", 8.5)
         pdf.set_text_color(*TEXT)
-        pdf.cell(40, 5, label)
-        pdf.set_font("Helvetica", "", 9)
+        pdf.cell(40, 4.5, label)
+        pdf.set_font("Helvetica", "", 8.5)
         pdf.set_text_color(*TEXT_SEC)
-        pdf.cell(0, 5, url, new_x="LMARGIN", new_y="NEXT")
-    pdf.ln(4)
+        pdf.cell(0, 4.5, url, new_x="LMARGIN", new_y="NEXT")
+    pdf.ln(2)
 
     pdf.divider()
     pdf.section_title("Media Contact", 10)
-    pdf.body_text("Nathan Fitzgerald, Director of Strategic Communications\nnathan@pelagicintelx.com | +1 (206) 555-0147")
+    pdf.set_font("Helvetica", "", 8.5)
+    pdf.set_text_color(*TEXT)
+    pdf.cell(0, 4.5, "Nathan Fitzgerald, Director of Strategic Communications  |  nathan@pelagicintelx.com  |  +1 (206) 555-0147")
 
     pdf.output(os.path.join(OUTPUT_DIR, "pelagicintelx-media-one-pager.pdf"))
     print("  Created: pelagicintelx-media-one-pager.pdf")
